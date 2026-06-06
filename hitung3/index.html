@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kuis Matematika Ceria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffe066, #74c0fc);
+            /* Merubah font ke Poppins */
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card {
+            border-radius: 25px;
+            background: #fff;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 800;
+            /* Membuat judul lebih tegas khas Poppins */
+        }
+
+        #answers {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .answer-btn {
+            font-family: 'Poppins', sans-serif;
+            /* Pastikan tombol juga menggunakan Poppins */
+            font-weight: 700;
+            font-size: 2.5rem;
+            width: 140px;
+            height: 90px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.3)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0)
+            }
+
+            25% {
+                transform: translateX(-12px)
+            }
+
+            50% {
+                transform: translateX(12px)
+            }
+
+            75% {
+                transform: translateX(-12px)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+
+        .correct {
+            animation: pop .4s
+        }
+
+        .wrong {
+            animation: shake .4s
+        }
+
+        .emoji {
+            font-size: 100px;
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            animation: fade .9s forwards;
+            z-index: 9999;
+        }
+
+        @keyframes fade {
+            to {
+                opacity: 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-4">
+
+        <h1 class="text-center mb-3">🧮🎉 KUIS MATEMATIKA CERIA 🎉🧮</h1>
+
+        <div id="setup" class="card p-4 shadow">
+            <h3 class="text-center">🎈 Ayo Mulai Bermain!</h3>
+            <form id="setupForm">
+                <div class="row mt-3">
+                    <div class="col">
+                        <label>Angka 1 (min)</label>
+                        <input id="min1" type="number" class="form-control form-control-lg" value="0">
+                    </div>
+                    <div class="col">
+                        <label>Angka 1 (max)</label>
+                        <input id="max1" type="number" class="form-control form-control-lg" value="10">
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <label>Angka 2 (min)</label>
+                        <input id="min2" type="number" class="form-control form-control-lg" value="0">
+                    </div>
+                    <div class="col">
+                        <label>Angka 2 (max)</label>
+                        <input id="max2" type="number" class="form-control form-control-lg" value="10">
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <label>Angka 3 (min)</label>
+                        <input id="min3" type="number" class="form-control form-control-lg" value="0">
+                    </div>
+                    <div class="col">
+                        <label>Angka 3 (max)</label>
+                        <input id="max3" type="number" class="form-control form-control-lg" value="10">
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <label>⏱ Waktu Menjawab (detik)</label>
+                        <input id="timeLimit" type="number" class="form-control form-control-lg" value="10">
+                    </div>
+                    <div class="col">
+                        <label>🔘 Jumlah Pilihan</label>
+                        <input id="totalOptions" type="number" class="form-control form-control-lg" value="3" min="2"
+                            max="6">
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <label>🔢 Pilih Operasi</label>
+                    <select id="operation" class="form-select form-select-lg" multiple required>
+                        <option value="+" selected>➕ Tambah</option>
+                        <option value="-">➖ Kurang</option>
+                        <option value="*">✖ Kali</option>
+                        <option value="/">➗ Bagi</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-warning btn-lg w-100 mt-4">🚀 MULAI MAIN</button>
+            </form>
+        </div>
+
+        <div id="quiz" class="card p-4 shadow mt-4 d-none">
+            <div class="d-flex justify-content-between mb-3">
+                <span class="badge bg-success fs-4">😊 Benar: <span id="liveCorrect">0</span></span>
+                <span class="badge bg-danger fs-4">😢 Salah: <span id="liveWrong">0</span></span>
+            </div>
+
+            <div class="progress mb-3" style="height:30px">
+                <div id="timeBar" class="progress-bar bg-info fs-4"></div>
+            </div>
+
+            <h1 id="question" class="text-center display-1 my-3"></h1>
+            <div id="answers"></div>
+
+            <button id="stopQuiz" class="btn btn-danger btn-lg w-100 mt-4">🛑 SELESAI</button>
+        </div>
+
+        <div id="result" class="card p-4 shadow mt-4 text-center d-none">
+            <h2>🏆 HASIL AKHIR 🏆</h2>
+            <p class="fs-1 text-success">😊 Benar: <span id="correct">0</span></p>
+            <p class="fs-1 text-danger">😢 Salah: <span id="wrong">0</span></p>
+            <button class="btn btn-primary btn-lg" onclick="location.reload()">🔄 Main Lagi</button>
+        </div>
+
+    </div>
+
+    <audio id="sndOk" src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.wav"></audio>
+    <audio id="sndFail" src="https://assets.mixkit.co/sfx/preview/mixkit-cartoon-failure-piano-473.wav"></audio>
+    <audio id="sndTime" src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-tone-996.wav"></audio>
+
+    <script>
+        let min1, max1, min2, max2, min3, max3, timeLimit, ops, totalOptions;
+        let correct = 0, wrong = 0, timer, current;
+
+        const q = document.getElementById("question");
+        const ans = document.getElementById("answers");
+        const bar = document.getElementById("timeBar");
+
+        const sndOk = document.getElementById("sndOk");
+        const sndFail = document.getElementById("sndFail");
+        const sndTime = document.getElementById("sndTime");
+
+        function speak(text) {
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'id-ID';
+            utterance.rate = 1.0;
+            utterance.pitch = 1.2;
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function rand(a, b) {
+            return Math.floor(Math.random() * (b - a + 1)) + a;
+        }
+
+        function gen() {
+            let a = rand(min1, max1);
+            let b = rand(min2, max2);
+            let c = rand(min3, max3);
+            let op1 = ops[rand(0, ops.length - 1)];
+            let op2 = ops[rand(0, ops.length - 1)];
+
+            if (op1 === "/") {
+                b = rand(1, 10);
+                a = b * rand(1, 10);
+            }
+            if (op2 === "/") {
+                let tempResult = eval(`${a}${op1}${b}`);
+                c = rand(1, 5);
+                if (tempResult % c !== 0) op2 = "+";
+            }
+
+            let finalResult = eval(`${a}${op1}${b}${op2}${c}`);
+            if (finalResult < 0) {
+                op1 = "+";
+                op2 = "+";
+                finalResult = a + b + c;
+            }
+
+            let options = [finalResult];
+
+            while (options.length < totalOptions) {
+                let fake = finalResult + rand(-10, 10);
+                if (!options.includes(fake) && fake >= 0) {
+                    options.push(fake);
+                }
+            }
+
+            const opNames = { "+": "tambah", "-": "kurang", "*": "kali", "/": "bagi" };
+            const textToSay = `${a} ${opNames[op1]} ${b} ${opNames[op2]} ${c} sama dengan berapa?`;
+
+            const displayOp1 = op1.replace('*', '×').replace('/', '÷');
+            const displayOp2 = op2.replace('*', '×').replace('/', '÷');
+
+            return {
+                question: `${a} ${displayOp1} ${b} ${displayOp2} ${c}`,
+                answer: finalResult,
+                options: options.sort(() => Math.random() - 0.5),
+                speechText: textToSay
+            };
+        }
+
+        function startQuiz() {
+            clearInterval(timer);
+            current = gen();
+
+            q.textContent = current.question;
+            ans.innerHTML = "";
+
+            speak(current.speechText);
+
+            current.options.forEach(val => {
+                const btn = document.createElement("button");
+                btn.className = "btn btn-outline-primary answer-btn";
+                btn.textContent = val;
+
+                btn.onclick = () => checkAnswer(val);
+                ans.appendChild(btn);
+            });
+
+            let t = timeLimit;
+            bar.style.width = "100%";
+
+            timer = setInterval(() => {
+                t--;
+                bar.style.width = (t / timeLimit * 100) + "%";
+
+                if (t <= 0) {
+                    clearInterval(timer);
+                    wrong++;
+                    document.getElementById("liveWrong").textContent = wrong;
+                    sndTime.play();
+                    speak("Yah, waktu habis!");
+
+                    Swal.fire({
+                        icon: "warning",
+                        title: "⏰ Waktu Habis!",
+                        confirmButtonText: "Lanjut Soal"
+                    }).then(startQuiz);
+                }
+            }, 1000);
+        }
+
+        function checkAnswer(val) {
+            clearInterval(timer);
+            document.querySelectorAll(".answer-btn").forEach(b => b.disabled = true);
+
+            if (val === current.answer) {
+                correct++;
+                document.getElementById("liveCorrect").textContent = correct;
+                sndOk.play();
+                confetti();
+                speak("Hore, kamu benar!");
+
+                Swal.fire({
+                    icon: "success",
+                    title: "🎉 BENAR!",
+                    confirmButtonText: "Lanjut Soal"
+                }).then(startQuiz);
+
+            } else {
+                wrong++;
+                document.getElementById("liveWrong").textContent = wrong;
+                sndFail.play();
+                speak("Ups, masih salah.");
+
+                Swal.fire({
+                    icon: "error",
+                    title: "😢 SALAH",
+                    text: `Jawaban benar: ${current.answer}`,
+                    confirmButtonText: "Lanjut Soal"
+                }).then(startQuiz);
+            }
+        }
+
+        document.getElementById("setupForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            min1 = Number(document.getElementById("min1").value);
+            max1 = Number(document.getElementById("max1").value);
+            min2 = Number(document.getElementById("min2").value);
+            max2 = Number(document.getElementById("max2").value);
+            min3 = Number(document.getElementById("min3").value);
+            max3 = Number(document.getElementById("max3").value);
+
+            timeLimit = Number(document.getElementById("timeLimit").value);
+            totalOptions = Number(document.getElementById("totalOptions").value);
+            ops = [...document.getElementById("operation").selectedOptions].map(o => o.value);
+
+            if (ops.length === 0) {
+                alert("Pilih minimal satu operasi!");
+                return;
+            }
+
+            document.getElementById("setup").classList.add("d-none");
+            document.getElementById("quiz").classList.remove("d-none");
+
+            startQuiz();
+        });
+
+        document.getElementById("stopQuiz").onclick = () => {
+            clearInterval(timer);
+            window.speechSynthesis.cancel();
+            document.getElementById("quiz").classList.add("d-none");
+            document.getElementById("result").classList.remove("d-none");
+            document.getElementById("correct").textContent = correct;
+            document.getElementById("wrong").textContent = wrong;
+
+            speak(`Luar biasa! Kamu berhasil menjawab ${correct} soal dengan benar.`);
+        };
+    </script>
+</body>
+
+</html>

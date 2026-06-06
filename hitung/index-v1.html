@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kuis Matematika Interaktif</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* agar jawaban tetap center */
+        #answers {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container py-4">
+        <h1 class="text-center mb-4">Kuis Matematika</h1>
+
+        <!-- Form pengaturan -->
+        <div id="setup" class="card shadow p-3">
+            <h4>Pengaturan Kuis</h4>
+            <form id="setupForm">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="form-label">Angka Pertama (min)</label>
+                        <input type="number" class="form-control" id="min1" value="0" required>
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Angka Pertama (max)</label>
+                        <input type="number" class="form-control" id="max1" value="9" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="form-label">Angka Kedua (min)</label>
+                        <input type="number" class="form-control" id="min2" value="0" required>
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Angka Kedua (max)</label>
+                        <input type="number" class="form-control" id="max2" value="9" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Waktu menjawab (detik)</label>
+                    <input type="number" class="form-control" id="timeLimit" value="1000" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Jenis Operasi</label>
+                    <select class="form-select" id="operation" multiple required>
+                        <option value="+">Penjumlahan (+)</option>
+                        <option value="-">Pengurangan (-)</option>
+                        <option value="*">Perkalian (×)</option>
+                        <option value="/">Pembagian (÷)</option>
+                    </select>
+                    <small class="text-muted">* Bisa pilih lebih dari satu</small>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Mulai Kuis</button>
+            </form>
+        </div>
+
+        <!-- Tampilan soal -->
+        <div id="quiz" class="card shadow p-3 mt-4 d-none">
+            <h4 class="mb-3">Jawab Soal:</h4>
+
+            <!-- skor live -->
+            <div class="d-flex justify-content-between mb-3">
+                <span class="badge bg-success fs-4 p-3">Benar: <span id="liveCorrect">0</span></span>
+                <span class="badge bg-danger fs-4 p-3">Salah: <span id="liveWrong">0</span></span>
+            </div>
+
+            <!-- Timer progress bar -->
+            <div class="progress mb-3" style="height: 30px;">
+                <div id="timeBar" class="progress-bar bg-info fw-bold" role="progressbar" style="width: 100%;">
+                    <span id="timeText"></span>
+                </div>
+            </div>
+
+            <!-- soal -->
+            <h1 class="text-center display-3 fw-bold my-4" id="question"></h1>
+
+            <!-- jawaban -->
+            <div class="mt-4" id="answers"></div>
+
+            <button class="btn btn-danger btn-lg mt-3 w-100" id="stopQuiz">Selesai Kuis</button>
+        </div>
+
+        <!-- Skor akhir -->
+        <div id="result" class="card shadow p-3 mt-4 d-none text-center">
+            <h3>Hasil Kuis</h3>
+            <p class="fs-3 text-success">Benar: <span id="correct">0</span></p>
+            <p class="fs-3 text-danger">Salah: <span id="wrong">0</span></p>
+            <button class="btn btn-secondary btn-lg" onclick="location.reload()">Main Lagi</button>
+        </div>
+    </div>
+
+    <script>
+        const setupForm = document.getElementById("setupForm");
+        const setupDiv = document.getElementById("setup");
+        const quizDiv = document.getElementById("quiz");
+        const resultDiv = document.getElementById("result");
+
+        const questionEl = document.getElementById("question");
+        const answersDiv = document.getElementById("answers");
+        const stopBtn = document.getElementById("stopQuiz");
+
+        const liveCorrectEl = document.getElementById("liveCorrect");
+        const liveWrongEl = document.getElementById("liveWrong");
+
+        const timeBar = document.getElementById("timeBar");
+        const timeText = document.getElementById("timeText");
+
+        let min1, max1, min2, max2, timeLimit, operations;
+        let correct = 0, wrong = 0, countdown;
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function generateQuestion() {
+            let a = getRandomInt(min1, max1);
+            let b = getRandomInt(min2, max2);
+            let op = operations[Math.floor(Math.random() * operations.length)];
+
+            if (op === "-") {
+                if (a < b) [a, b] = [b, a];
+            }
+            if (op === "/") {
+                b = getRandomInt(min2 || 1, max2 || 9);
+                let hasil = getRandomInt(min1, max1);
+                a = hasil * b;
+            }
+
+            let question = `${a} ${op} ${b}`;
+            let answer = eval(question);
+
+            let options = [answer];
+            while (options.length < 3) {
+                let fake = answer + getRandomInt(-10, 10);
+                if (!options.includes(fake) && fake >= 0) options.push(fake);
+            }
+            options = options.sort(() => Math.random() - 0.5);
+
+            return { question, answer, options };
+        }
+
+        function startQuiz() {
+            let { question, answer, options } = generateQuestion();
+            questionEl.textContent = question;
+            answersDiv.innerHTML = "";
+
+            options.forEach(opt => {
+                let btn = document.createElement("button");
+                btn.className = "btn btn-outline-primary btn-lg m-2 fs-3";
+                btn.textContent = opt;
+
+                btn.onclick = () => {
+                    clearInterval(countdown);
+
+                    if (opt === answer) {
+                        correct++;
+                        btn.classList.remove("btn-outline-primary");
+                        btn.classList.add("btn-success");
+                    } else {
+                        wrong++;
+                        btn.classList.remove("btn-outline-primary");
+                        btn.classList.add("btn-danger");
+                    }
+
+                    liveCorrectEl.textContent = correct;
+                    liveWrongEl.textContent = wrong;
+
+                    setTimeout(() => {
+                        startQuiz();
+                    }, 800);
+                };
+
+                answersDiv.appendChild(btn);
+            });
+
+            let timeLeft = timeLimit;
+            timeText.textContent = timeLeft + " dtk";
+            timeBar.style.width = "100%";
+
+            countdown = setInterval(() => {
+                timeLeft--;
+                let percent = (timeLeft / timeLimit) * 100;
+                timeBar.style.width = percent + "%";
+                timeText.textContent = timeLeft + " dtk";
+
+                if (timeLeft <= 0) {
+                    clearInterval(countdown);
+                    wrong++;
+                    liveWrongEl.textContent = wrong;
+                    startQuiz();
+                }
+            }, 1000);
+        }
+
+        function stopQuiz() {
+            clearInterval(countdown);
+            quizDiv.classList.add("d-none");
+            resultDiv.classList.remove("d-none");
+            document.getElementById("correct").textContent = correct;
+            document.getElementById("wrong").textContent = wrong;
+        }
+
+        setupForm.addEventListener("submit", e => {
+            e.preventDefault();
+            min1 = parseInt(document.getElementById("min1").value);
+            max1 = parseInt(document.getElementById("max1").value);
+            min2 = parseInt(document.getElementById("min2").value);
+            max2 = parseInt(document.getElementById("max2").value);
+            timeLimit = parseInt(document.getElementById("timeLimit").value);
+            operations = Array.from(document.getElementById("operation").selectedOptions).map(o => o.value);
+
+            setupDiv.classList.add("d-none");
+            quizDiv.classList.remove("d-none");
+            startQuiz();
+        });
+
+        stopBtn.addEventListener("click", stopQuiz);
+    </script>
+
+</body>
+
+</html>
