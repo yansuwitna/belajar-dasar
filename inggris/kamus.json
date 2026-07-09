@@ -1,0 +1,760 @@
+{
+    "hewan": [
+        {
+            "en": "Dog",
+            "id": "Anjing"
+        },
+        {
+            "en": "Cat",
+            "id": "Kucing"
+        },
+        {
+            "en": "Elephant",
+            "id": "Gajah"
+        },
+        {
+            "en": "Lion",
+            "id": "Singa"
+        },
+        {
+            "en": "Tiger",
+            "id": "Harimau"
+        },
+        {
+            "en": "Bird",
+            "id": "Burung"
+        },
+        {
+            "en": "Fish",
+            "id": "Ikan"
+        },
+        {
+            "en": "Monkey",
+            "id": "Monyet"
+        },
+        {
+            "en": "Horse",
+            "id": "Kuda"
+        },
+        {
+            "en": "Cow",
+            "id": "Sapi"
+        },
+        {
+            "en": "Sheep",
+            "id": "Domba"
+        },
+        {
+            "en": "Pig",
+            "id": "Babi"
+        },
+        {
+            "en": "Bear",
+            "id": "Beruang"
+        },
+        {
+            "en": "Rabbit",
+            "id": "Kelinci"
+        },
+        {
+            "en": "Deer",
+            "id": "Rusa"
+        },
+        {
+            "en": "Crocodile",
+            "id": "Buaya"
+        },
+        {
+            "en": "Snake",
+            "id": "Ular"
+        },
+        {
+            "en": "Turtle",
+            "id": "Kura-kura"
+        },
+        {
+            "en": "Frog",
+            "id": "Katak"
+        },
+        {
+            "en": "Spider",
+            "id": "Laba-laba"
+        },
+        {
+            "en": "Ant",
+            "id": "Semut"
+        },
+        {
+            "en": "Bee",
+            "id": "Lebah"
+        },
+        {
+            "en": "Butterfly",
+            "id": "Kupu-kupu"
+        },
+        {
+            "en": "Dolphin",
+            "id": "Lumba-lumba"
+        },
+        {
+            "en": "Shark",
+            "id": "Hiu"
+        },
+        {
+            "en": "Whale",
+            "id": "Paus"
+        },
+        {
+            "en": "Penguin",
+            "id": "Penguin"
+        },
+        {
+            "en": "Eagle",
+            "id": "Elang"
+        },
+        {
+            "en": "Owl",
+            "id": "Burung Hantu"
+        },
+        {
+            "en": "Bat",
+            "id": "Kelelawar"
+        }
+    ],
+    "buah": [
+        {
+            "en": "Apple",
+            "id": "Apel"
+        },
+        {
+            "en": "Banana",
+            "id": "Pisang"
+        },
+        {
+            "en": "Orange",
+            "id": "Jeruk"
+        },
+        {
+            "en": "Mango",
+            "id": "Mangga"
+        },
+        {
+            "en": "Grape",
+            "id": "Anggur"
+        },
+        {
+            "en": "Watermelon",
+            "id": "Semangka"
+        },
+        {
+            "en": "Pineapple",
+            "id": "Nanas"
+        },
+        {
+            "en": "Strawberry",
+            "id": "Stroberi"
+        },
+        {
+            "en": "Papaya",
+            "id": "Pepaya"
+        },
+        {
+            "en": "Avocado",
+            "id": "Alpukat"
+        },
+        {
+            "en": "Cherry",
+            "id": "Ceri"
+        },
+        {
+            "en": "Lemon",
+            "id": "Lemon"
+        },
+        {
+            "en": "Melon",
+            "id": "Melon"
+        },
+        {
+            "en": "Peach",
+            "id": "Persik"
+        },
+        {
+            "en": "Pear",
+            "id": "Pir"
+        },
+        {
+            "en": "Coconut",
+            "id": "Kelapa"
+        },
+        {
+            "en": "Kiwi",
+            "id": "Kiwi"
+        },
+        {
+            "en": "Blueberry",
+            "id": "Beri Biru"
+        },
+        {
+            "en": "Guava",
+            "id": "Jambu Biji"
+        },
+        {
+            "en": "Jackfruit",
+            "id": "Nangka"
+        },
+        {
+            "en": "Dragonfruit",
+            "id": "Buah Naga"
+        }
+    ],
+    "warna": [
+        {
+            "en": "Red",
+            "id": "Merah"
+        },
+        {
+            "en": "Blue",
+            "id": "Biru"
+        },
+        {
+            "en": "Green",
+            "id": "Hijau"
+        },
+        {
+            "en": "Yellow",
+            "id": "Kuning"
+        },
+        {
+            "en": "Black",
+            "id": "Hitam"
+        },
+        {
+            "en": "White",
+            "id": "Putih"
+        },
+        {
+            "en": "Purple",
+            "id": "Ungu"
+        },
+        {
+            "en": "Brown",
+            "id": "Coklat"
+        },
+        {
+            "en": "Pink",
+            "id": "Merah Muda"
+        },
+        {
+            "en": "Orange",
+            "id": "Jingga"
+        },
+        {
+            "en": "Grey",
+            "id": "Abu-abu"
+        },
+        {
+            "en": "Silver",
+            "id": "Perak"
+        },
+        {
+            "en": "Gold",
+            "id": "Emas"
+        },
+        {
+            "en": "Maroon",
+            "id": "Merah Marun"
+        },
+        {
+            "en": "Navy",
+            "id": "Biru Dongker"
+        },
+        {
+            "en": "Cyan",
+            "id": "Biru Muda"
+        }
+    ],
+    "tubuh": [
+        {
+            "en": "Head",
+            "id": "Kepala"
+        },
+        {
+            "en": "Eye",
+            "id": "Mata"
+        },
+        {
+            "en": "Ear",
+            "id": "Telinga"
+        },
+        {
+            "en": "Nose",
+            "id": "Hidung"
+        },
+        {
+            "en": "Mouth",
+            "id": "Mulut"
+        },
+        {
+            "en": "Hand",
+            "id": "Tangan"
+        },
+        {
+            "en": "Foot",
+            "id": "Kaki"
+        },
+        {
+            "en": "Hair",
+            "id": "Rambut"
+        },
+        {
+            "en": "Tooth",
+            "id": "Gigi"
+        },
+        {
+            "en": "Face",
+            "id": "Wajah"
+        },
+        {
+            "en": "Cheek",
+            "id": "Pipi"
+        },
+        {
+            "en": "Chin",
+            "id": "Dagu"
+        },
+        {
+            "en": "Neck",
+            "id": "Leher"
+        },
+        {
+            "en": "Shoulder",
+            "id": "Bahu"
+        },
+        {
+            "en": "Arm",
+            "id": "Lengan"
+        },
+        {
+            "en": "Elbow",
+            "id": "Siku"
+        },
+        {
+            "en": "Finger",
+            "id": "Jari"
+        },
+        {
+            "en": "Chest",
+            "id": "Dada"
+        },
+        {
+            "en": "Stomach",
+            "id": "Perut"
+        },
+        {
+            "en": "Back",
+            "id": "Punggung"
+        },
+        {
+            "en": "Leg",
+            "id": "Kaki (Tungkai)"
+        },
+        {
+            "en": "Knee",
+            "id": "Lutut"
+        },
+        {
+            "en": "Toe",
+            "id": "Jari Kaki"
+        },
+        {
+            "en": "Nail",
+            "id": "Kuku"
+        },
+        {
+            "en": "Skin",
+            "id": "Kulit"
+        },
+        {
+            "en": "Tongue",
+            "id": "Lidah"
+        },
+        {
+            "en": "Lip",
+            "id": "Bibir"
+        }
+    ],
+    "sayuran": [
+        {
+            "en": "Carrot",
+            "id": "Wortel"
+        },
+        {
+            "en": "Potato",
+            "id": "Kentang"
+        },
+        {
+            "en": "Tomato",
+            "id": "Tomat"
+        },
+        {
+            "en": "Onion",
+            "id": "Bawang Merah"
+        },
+        {
+            "en": "Garlic",
+            "id": "Bawang Putih"
+        },
+        {
+            "en": "Cabbage",
+            "id": "Kubis"
+        },
+        {
+            "en": "Spinach",
+            "id": "Bayam"
+        },
+        {
+            "en": "Broccoli",
+            "id": "Brokoli"
+        },
+        {
+            "en": "Mushroom",
+            "id": "Jamur"
+        },
+        {
+            "en": "Cucumber",
+            "id": "Mentimun"
+        },
+        {
+            "en": "Eggplant",
+            "id": "Terong"
+        },
+        {
+            "en": "Chili",
+            "id": "Cabai"
+        },
+        {
+            "en": "Corn",
+            "id": "Jagung"
+        },
+        {
+            "en": "Bean",
+            "id": "Kacang Buncis"
+        },
+        {
+            "en": "Pumpkin",
+            "id": "Labu"
+        },
+        {
+            "en": "Celery",
+            "id": "Seledri"
+        },
+        {
+            "en": "Ginger",
+            "id": "Jahe"
+        },
+        {
+            "en": "Cassava",
+            "id": "Singkong"
+        }
+    ],
+    "kendaraan": [
+        {
+            "en": "Car",
+            "id": "Mobil"
+        },
+        {
+            "en": "Bicycle",
+            "id": "Sepeda"
+        },
+        {
+            "en": "Motorcycle",
+            "id": "Sepeda Motor"
+        },
+        {
+            "en": "Bus",
+            "id": "Bus"
+        },
+        {
+            "en": "Train",
+            "id": "Kereta Api"
+        },
+        {
+            "en": "Airplane",
+            "id": "Pesawat Terbang"
+        },
+        {
+            "en": "Helicopter",
+            "id": "Helikopter"
+        },
+        {
+            "en": "Boat",
+            "id": "Perahu"
+        },
+        {
+            "en": "Ship",
+            "id": "Kapal"
+        },
+        {
+            "en": "Truck",
+            "id": "Truk"
+        },
+        {
+            "en": "Ambulance",
+            "id": "Ambulans"
+        },
+        {
+            "en": "Taxi",
+            "id": "Taksi"
+        },
+        {
+            "en": "Submarine",
+            "id": "Kapal Selam"
+        },
+        {
+            "en": "Scooter",
+            "id": "Skuter"
+        }
+    ],
+    "profesi": [
+        {
+            "en": "Teacher",
+            "id": "Guru"
+        },
+        {
+            "en": "Doctor",
+            "id": "Dokter"
+        },
+        {
+            "en": "Nurse",
+            "id": "Perawat"
+        },
+        {
+            "en": "Police",
+            "id": "Polisi"
+        },
+        {
+            "en": "Firefighter",
+            "id": "Pemadam Kebakaran"
+        },
+        {
+            "en": "Pilot",
+            "id": "Pilot"
+        },
+        {
+            "en": "Farmer",
+            "id": "Petani"
+        },
+        {
+            "en": "Chef",
+            "id": "Koki"
+        },
+        {
+            "en": "Singer",
+            "id": "Penyanyi"
+        },
+        {
+            "en": "Actor",
+            "id": "Aktor"
+        },
+        {
+            "en": "Engineer",
+            "id": "Insinyur"
+        },
+        {
+            "en": "Mechanic",
+            "id": "Mekanik"
+        },
+        {
+            "en": "Writer",
+            "id": "Penulis"
+        },
+        {
+            "en": "Dentist",
+            "id": "Dokter Gigi"
+        },
+        {
+            "en": "Soldier",
+            "id": "Tentara"
+        },
+        {
+            "en": "Scientist",
+            "id": "Ilmuwan"
+        }
+    ],
+    "benda_sekolah": [
+        {
+            "en": "Book",
+            "id": "Buku"
+        },
+        {
+            "en": "Pen",
+            "id": "Pulpen"
+        },
+        {
+            "en": "Pencil",
+            "id": "Pensil"
+        },
+        {
+            "en": "Eraser",
+            "id": "Penghapus"
+        },
+        {
+            "en": "Ruler",
+            "id": "Penggaris"
+        },
+        {
+            "en": "Bag",
+            "id": "Tas"
+        },
+        {
+            "en": "Table",
+            "id": "Meja"
+        },
+        {
+            "en": "Chair",
+            "id": "Kursi"
+        },
+        {
+            "en": "Whiteboard",
+            "id": "Papan Tulis"
+        },
+        {
+            "en": "Marker",
+            "id": "Spidol"
+        },
+        {
+            "en": "Notebook",
+            "id": "Buku Catatan"
+        },
+        {
+            "en": "Scissors",
+            "id": "Gunting"
+        },
+        {
+            "en": "Glue",
+            "id": "Lem"
+        },
+        {
+            "en": "Calculator",
+            "id": "Kalkulator"
+        },
+        {
+            "en": "Map",
+            "id": "Peta"
+        },
+        {
+            "en": "Computer",
+            "id": "Komputer"
+        },
+        {
+            "en": "Paper",
+            "id": "Kertas"
+        },
+        {
+            "en": "Crayon",
+            "id": "Krayon"
+        }
+    ],
+    "alam": [
+        {
+            "en": "Sun",
+            "id": "Matahari"
+        },
+        {
+            "en": "Moon",
+            "id": "Bulan"
+        },
+        {
+            "en": "Star",
+            "id": "Bintang"
+        },
+        {
+            "en": "Sky",
+            "id": "Langit"
+        },
+        {
+            "en": "Cloud",
+            "id": "Awan"
+        },
+        {
+            "en": "Rain",
+            "id": "Hujan"
+        },
+        {
+            "en": "Wind",
+            "id": "Angin"
+        },
+        {
+            "en": "Mountain",
+            "id": "Gunung"
+        },
+        {
+            "en": "River",
+            "id": "Sungai"
+        },
+        {
+            "en": "Ocean",
+            "id": "Samudra"
+        },
+        {
+            "en": "Sea",
+            "id": "Laut"
+        },
+        {
+            "en": "Lake",
+            "id": "Danau"
+        },
+        {
+            "en": "Tree",
+            "id": "Pohon"
+        },
+        {
+            "en": "Flower",
+            "id": "Bunga"
+        },
+        {
+            "en": "Grass",
+            "id": "Rumput"
+        },
+        {
+            "en": "Stone",
+            "id": "Batu"
+        },
+        {
+            "en": "Sand",
+            "id": "Pasir"
+        },
+        {
+            "en": "Fire",
+            "id": "Api"
+        },
+        {
+            "en": "Water",
+            "id": "Air"
+        },
+        {
+            "en": "Earth",
+            "id": "Bumi"
+        },
+        {
+            "en": "Forest",
+            "id": "Hutan"
+        },
+        {
+            "en": "Island",
+            "id": "Pulau"
+        },
+        {
+            "en": "Desert",
+            "id": "Gurun"
+        },
+        {
+            "en": "Snow",
+            "id": "Salju"
+        },
+        {
+            "en": "Ice",
+            "id": "Es"
+        }
+    ]
+}

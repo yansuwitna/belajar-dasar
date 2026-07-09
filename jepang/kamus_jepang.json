@@ -1,0 +1,83 @@
+{
+    "dasar": [
+        {
+            "kanji": "猫",
+            "romaji": "Neko",
+            "id": "Kucing"
+        },
+        {
+            "kanji": "犬",
+            "romaji": "Inu",
+            "id": "Anjing"
+        },
+        {
+            "kanji": "本",
+            "romaji": "Hon",
+            "id": "Buku"
+        },
+        {
+            "kanji": "水",
+            "romaji": "Mizu",
+            "id": "Air"
+        },
+        {
+            "kanji": "学校",
+            "romaji": "Gakkou",
+            "id": "Sekolah"
+        },
+        {
+            "kanji": "先生",
+            "romaji": "Sensei",
+            "id": "Guru"
+        }
+    ],
+    "angka": [
+        {
+            "kanji": "一",
+            "romaji": "Ichi",
+            "id": "Satu"
+        },
+        {
+            "kanji": "二",
+            "romaji": "Ni",
+            "id": "Dua"
+        },
+        {
+            "kanji": "三",
+            "romaji": "San",
+            "id": "Tiga"
+        },
+        {
+            "kanji": "四",
+            "romaji": "Yon",
+            "id": "Empat"
+        },
+        {
+            "kanji": "五",
+            "romaji": "Go",
+            "id": "Lima"
+        }
+    ],
+    "kata_kerja": [
+        {
+            "kanji": "食べる",
+            "romaji": "Taberu",
+            "id": "Makan"
+        },
+        {
+            "kanji": "飲む",
+            "romaji": "Nomu",
+            "id": "Minum"
+        },
+        {
+            "kanji": "見る",
+            "romaji": "Miru",
+            "id": "Melihat"
+        },
+        {
+            "kanji": "行く",
+            "romaji": "Iku",
+            "id": "Pergi"
+        }
+    ]
+}

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kuis Bahasa Jepang Ceria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            /* Tema warna Jepang (Sakura) */
+            background: linear-gradient(135deg, #ff9a9e, #fecfef);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card {
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: bold;
+        }
+
+        #answers {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .answer-btn {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 1.8rem;
+            min-width: 150px;
+            height: 90px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .kanji-text {
+            font-size: 4rem;
+            display: block;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .romaji-text {
+            font-size: 1.5rem;
+            color: #6c757d;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-4">
+
+        <h1 class="text-center mb-3 text-danger">🌸🎉 KUIS BAHASA JEPANG CERIA 🎉🌸</h1>
+
+        <div id="setup" class="card p-4 shadow">
+            <h3 class="text-center">🎈 Ayo Belajar Kosakata!</h3>
+            <form id="setupForm">
+                <div class="mt-3">
+                    <label>👤 Nama Pemain</label>
+                    <input id="playerName" type="text" class="form-control form-control-lg"
+                        placeholder="Masukkan namamu..." required>
+                </div>
+
+                <div class="mt-3">
+                    <label>⏱ Waktu Menjawab (detik)</label>
+                    <input id="timeLimit" type="number" class="form-control form-control-lg" value="10">
+                </div>
+
+                <div class="mt-3">
+                    <label>📚 Pilih Kategori Kosakata</label>
+                    <select id="kategori" class="form-select form-select-lg" multiple required style="height: 150px;">
+                    </select>
+                    <small class="text-muted">Tahan tombol Ctrl (Windows) / Cmd (Mac) untuk memilih lebih dari
+                        satu.</small>
+                </div>
+
+                <div class="mt-3">
+                    <label>👁️ Tampilan Teks Soal</label>
+                    <select id="showTextOpt" class="form-select form-select-lg">
+                        <option value="yes" selected>Tampilkan Teks Soal</option>
+                        <option value="no">Sembunyikan (Hanya Suara)</option>
+                    </select>
+                </div>
+
+                <div class="mt-3">
+                    <label>🔊 Tombol Ulangi Suara</label>
+                    <select id="showRepeatOpt" class="form-select form-select-lg">
+                        <option value="yes">Aktifkan Tombol Ulangi</option>
+                        <option value="no" selected>Nonaktifkan</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-danger btn-lg w-100 mt-4">🚀 MULAI MAIN</button>
+                <a href="riwayat.html" class="btn btn-outline-dark w-100 mt-2">📊 Lihat Halaman Riwayat</a>
+            </form>
+        </div>
+
+        <div id="quiz" class="card p-4 shadow mt-4 d-none">
+            <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                <span class="badge bg-success fs-4">😊 Benar: <span id="liveCorrect">0</span></span>
+                <span class="badge bg-danger fs-4">😢 Salah: <span id="liveWrong">0</span></span>
+            </div>
+
+            <div class="progress mb-3" style="height:30px">
+                <div id="timeBar" class="progress-bar bg-info fs-4"></div>
+            </div>
+
+            <h1 id="question" class="text-center my-3"></h1>
+
+            <div class="text-center mb-3">
+                <button id="btnRepeat" class="btn btn-info btn-lg d-none">🔊 Ulangi Soal</button>
+            </div>
+
+            <div id="answers"></div>
+
+            <button id="stopQuiz" class="btn btn-dark btn-lg w-100 mt-4">🛑 SELESAI</button>
+        </div>
+
+        <div id="result" class="card p-4 shadow mt-4 text-center d-none">
+            <h2>🏆 HASIL AKHIR 🏆</h2>
+            <h3 class="text-danger mb-3">Sugoi, <span id="displayName"></span>!</h3>
+            <p class="fs-1 text-success mb-1">😊 Benar: <span id="correct">0</span></p>
+            <p class="fs-1 text-danger mb-1">😢 Salah: <span id="wrong">0</span></p>
+            <p class="fs-3 text-info mb-1">⏱️ Rata-rata: <span id="avgTimeDisplay">0</span></p>
+            <p class="fs-3 text-warning">⏳ Total Waktu Main: <span id="totalTimeDisplay">0</span></p>
+
+            <button class="btn btn-danger btn-lg mt-2" onclick="location.reload()">🔄 Main Lagi</button>
+            <a href="riwayat.html" class="btn btn-secondary btn-lg mt-2">📊 Kelola Riwayat</a>
+        </div>
+
+    </div>
+
+    <audio id="sndOk" src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.wav"></audio>
+    <audio id="sndFail" src="https://assets.mixkit.co/sfx/preview/mixkit-cartoon-failure-piano-473.wav"></audio>
+    <audio id="sndTime" src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-tone-996.wav"></audio>
+
+    <script>
+        let wordBank = {};
+        let playerName = "", timeLimit, selectedCategories = [];
+        let pool = [];
+        let isShowText, isShowRepeat;
+        let correct = 0, wrong = 0, timer, current;
+        let totalTimeSpent = 0, totalQuestions = 0, questionStartTime = 0;
+        let quizSessionStartTime = 0;
+
+        const q = document.getElementById("question");
+        const ans = document.getElementById("answers");
+        const bar = document.getElementById("timeBar");
+        const btnRepeat = document.getElementById("btnRepeat");
+        const sndOk = document.getElementById("sndOk");
+        const sndFail = document.getElementById("sndFail");
+        const sndTime = document.getElementById("sndTime");
+
+        const DB_API_URL = 'api.php';
+
+        // Suara Bahasa Jepang
+        function speakJapanese(text) {
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'ja-JP';
+            utterance.rate = 0.85;
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function speakIndo(text) {
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'id-ID';
+            utterance.rate = 1.0;
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function rand(a, b) {
+            return Math.floor(Math.random() * (b - a + 1)) + a;
+        }
+
+        function gen() {
+            let target = pool[rand(0, pool.length - 1)];
+            let result = target.id;
+            let options = [result];
+
+            while (options.length < 4) {
+                let fakeTarget = pool[rand(0, pool.length - 1)];
+                if (!options.includes(fakeTarget.id)) {
+                    options.push(fakeTarget.id);
+                }
+            }
+
+            return {
+                kanji: target.kanji,
+                romaji: target.romaji,
+                answer: result,
+                options: options.sort(() => Math.random() - 0.5),
+                speechText: target.kanji
+            };
+        }
+
+        function startQuiz() {
+            clearInterval(timer);
+            current = gen();
+            questionStartTime = Date.now();
+
+            // Format tampilan soal (Kanji dan Romaji)
+            if (isShowText) {
+                q.innerHTML = `<span class="kanji-text">${current.kanji}</span><span class="romaji-text">(${current.romaji})</span>`;
+            } else {
+                q.innerHTML = `<span class="kanji-text">🔊</span><span class="romaji-text">(Listen...)</span>`;
+            }
+
+            if (isShowRepeat) {
+                btnRepeat.classList.remove("d-none");
+            } else {
+                btnRepeat.classList.add("d-none");
+            }
+
+            ans.innerHTML = "";
+            speakJapanese(current.speechText);
+
+            current.options.forEach(val => {
+                const btn = document.createElement("button");
+                btn.className = "btn btn-outline-danger answer-btn";
+                btn.textContent = val;
+                btn.onclick = () => checkAnswer(val);
+                ans.appendChild(btn);
+            });
+
+            let t = timeLimit;
+            bar.style.width = "100%";
+            timer = setInterval(() => {
+                t--;
+                bar.style.width = (t / timeLimit * 100) + "%";
+                if (t <= 0) {
+                    clearInterval(timer);
+                    let timeSpent = (Date.now() - questionStartTime) / 1000;
+                    totalTimeSpent += timeSpent;
+                    totalQuestions++;
+                    wrong++;
+                    document.getElementById("liveWrong").textContent = wrong;
+                    sndTime.play();
+                    speakIndo("Yah, waktu habis!");
+
+                    // SweetAlert untuk waktu habis
+                    Swal.fire({
+                        icon: "warning",
+                        title: "⏰ Waktu Habis!",
+                        text: `Artinya adalah: ${current.answer}`,
+                        confirmButtonText: "Lanjut Soal"
+                    }).then(startQuiz);
+                }
+            }, 1000);
+        }
+
+        function checkAnswer(val) {
+            clearInterval(timer);
+            let timeSpent = (Date.now() - questionStartTime) / 1000;
+            totalTimeSpent += timeSpent;
+            totalQuestions++;
+            document.querySelectorAll(".answer-btn").forEach(b => b.disabled = true);
+
+            if (val === current.answer) {
+                correct++;
+                document.getElementById("liveCorrect").textContent = correct;
+                sndOk.play();
+                confetti();
+                speakIndo("Benar!");
+
+                // SweetAlert untuk jawaban benar
+                Swal.fire({
+                    icon: "success",
+                    title: "🎉 BENAR!",
+                    confirmButtonText: "Lanjut Soal"
+                }).then(startQuiz);
+            } else {
+                wrong++;
+                document.getElementById("liveWrong").textContent = wrong;
+                sndFail.play();
+                speakIndo("Salah!");
+
+                // SweetAlert untuk jawaban salah
+                Swal.fire({
+                    icon: "error",
+                    title: "😢 SALAH",
+                    text: `Artinya adalah: ${current.answer}`,
+                    confirmButtonText: "Lanjut Soal"
+                }).then(startQuiz);
+            }
+        }
+
+        btnRepeat.onclick = () => {
+            if (current && current.speechText) speakJapanese(current.speechText);
+        };
+
+        // Otomatis Load Kategori
+        async function loadCategories() {
+            try {
+                const response = await fetch('kamus_jepang.json');
+                const data = await response.json();
+                const selectElement = document.getElementById('kategori');
+                selectElement.innerHTML = "";
+                Object.keys(data).forEach(category => {
+                    let option = document.createElement('option');
+                    option.value = category;
+                    option.textContent = category.replace('_', ' ').toUpperCase();
+                    selectElement.appendChild(option);
+                });
+            } catch (error) {
+                console.error("Gagal memuat kategori:", error);
+            }
+        }
+        loadCategories();
+
+        // Submit Pengaturan
+        document.getElementById("setupForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            selectedCategories = [...document.getElementById("kategori").selectedOptions].map(o => o.value);
+            if (selectedCategories.length === 0) {
+                Swal.fire('Peringatan', 'Pilih minimal satu kategori!', 'warning');
+                return;
+            }
+
+            // SweetAlert Loading
+            Swal.fire({
+                title: '🔄 Memuat Kosakata...',
+                text: 'Harap tunggu sebentar.',
+                allowOutsideClick: false,
+                didOpen: () => { Swal.showLoading() }
+            });
+
+            try {
+                const response = await fetch('kamus_jepang.json');
+                if (!response.ok) throw new Error("Gagal memuat file");
+                wordBank = await response.json();
+
+                pool = [];
+                selectedCategories.forEach(cat => {
+                    if (wordBank[cat]) pool.push(...wordBank[cat]);
+                });
+
+                if (pool.length < 4) {
+                    Swal.fire('Error', 'Kosakata di kategori ini terlalu sedikit (minimal 4 kata dibutuhkan).', 'error');
+                    return;
+                }
+
+                Swal.close();
+
+                playerName = document.getElementById("playerName").value;
+                timeLimit = Number(document.getElementById("timeLimit").value);
+                isShowText = document.getElementById("showTextOpt").value === "yes";
+                isShowRepeat = document.getElementById("showRepeatOpt").value === "yes";
+
+                correct = 0; wrong = 0; totalTimeSpent = 0; totalQuestions = 0;
+                document.getElementById("liveCorrect").textContent = correct;
+                document.getElementById("liveWrong").textContent = wrong;
+                document.getElementById("setup").classList.add("d-none");
+                document.getElementById("quiz").classList.remove("d-none");
+
+                quizSessionStartTime = Date.now();
+                startQuiz();
+
+            } catch (error) {
+                console.error(error);
+                Swal.fire('Gagal', 'Pastikan file kamus_jepang.json ada.', 'error');
+            }
+        });
+
+        document.getElementById("stopQuiz").onclick = () => {
+            clearInterval(timer);
+            window.speechSynthesis.cancel();
+
+            let totalWaktuKeseluruhan = ((Date.now() - quizSessionStartTime) / 1000).toFixed(2);
+
+            document.getElementById("quiz").classList.add("d-none");
+            document.getElementById("result").classList.remove("d-none");
+            document.getElementById("displayName").textContent = playerName;
+            document.getElementById("correct").textContent = correct;
+            document.getElementById("wrong").textContent = wrong;
+            document.getElementById("totalTimeDisplay").textContent = `${totalWaktuKeseluruhan} detik`;
+
+            let avgTime = totalQuestions > 0 ? (totalTimeSpent / totalQuestions).toFixed(2) : 0;
+            document.getElementById("avgTimeDisplay").textContent = `${avgTime} detik/soal`;
+
+            if (totalQuestions > 0) {
+                let today = new Date().toLocaleString("id-ID");
+                let selectedCatNames = selectedCategories.join(', ');
+
+                let dataToSave = {
+                    nama: playerName,
+                    tanggal: today,
+                    kategori: selectedCatNames,
+                    benar: correct,
+                    salah: wrong,
+                    rataWaktu: avgTime,
+                    totalWaktu: totalWaktuKeseluruhan
+                };
+
+                fetch(`${DB_API_URL}?action=save`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(dataToSave)
+                }).then(() => {
+                    speakIndo(`Luar biasa ${playerName}! Kamu berhasil menjawab ${correct} soal.`);
+                });
+            } else {
+                speakIndo("Kamu belum menjawab soal apapun.");
+            }
+        };
+    </script>
+</body>
+
+</html>
