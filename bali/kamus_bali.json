@@ -1,0 +1,2011 @@
+{
+    "angka": [
+        {
+            "bali": "Siki / Besik",
+            "id": "Satu"
+        },
+        {
+            "bali": "Kalih / Dua",
+            "id": "Dua"
+        },
+        {
+            "bali": "Tiga / Telu",
+            "id": "Tiga"
+        },
+        {
+            "bali": "Papat",
+            "id": "Empat"
+        },
+        {
+            "bali": "Lima",
+            "id": "Lima"
+        },
+        {
+            "bali": "Nenem / Enem",
+            "id": "Enam"
+        },
+        {
+            "bali": "Pitu",
+            "id": "Tujuh"
+        },
+        {
+            "bali": "Kutus",
+            "id": "Delapan"
+        },
+        {
+            "bali": "Sanga",
+            "id": "Sembilan"
+        },
+        {
+            "bali": "Dasa",
+            "id": "Sepuluh"
+        },
+        {
+            "bali": "Solas",
+            "id": "Sebelas"
+        },
+        {
+            "bali": "Roras",
+            "id": "Dua belas"
+        },
+        {
+            "bali": "Telung olas",
+            "id": "Tiga belas"
+        },
+        {
+            "bali": "Pat belas",
+            "id": "Empat belas"
+        },
+        {
+            "bali": "Limang olas",
+            "id": "Lima belas"
+        },
+        {
+            "bali": "Nem belas",
+            "id": "Enam belas"
+        },
+        {
+            "bali": "Pitung olas",
+            "id": "Tujuh belas"
+        },
+        {
+            "bali": "Kutus olas",
+            "id": "Delapan belas"
+        },
+        {
+            "bali": "Siang olas",
+            "id": "Sembilan belas"
+        },
+        {
+            "bali": "Rong dasa",
+            "id": "Dua puluh"
+        },
+        {
+            "bali": "Selikur",
+            "id": "Dua Puluh Satu"
+        },
+        {
+            "bali": "Dua likur",
+            "id": "Dua Puluh Dua"
+        },
+        {
+            "bali": "Telu likur",
+            "id": "Dua Puluh Tiga"
+        },
+        {
+            "bali": "Pat likur",
+            "id": "Dua Puluh Empat"
+        },
+        {
+            "bali": "Selae",
+            "id": "Dua Puluh Lima"
+        },
+        {
+            "bali": "Enem likur",
+            "id": "Dua Puluh Enam"
+        },
+        {
+            "bali": "Pitu likur",
+            "id": "Dua Puluh Tujuh"
+        },
+        {
+            "bali": "Kutus likur",
+            "id": "Dua Puluh Delapan"
+        },
+        {
+            "bali": "Sanga likur",
+            "id": "Dua Puluh Sembilan"
+        },
+        {
+            "bali": "Telung dasa",
+            "id": "Tiga Puluh"
+        },
+        {
+            "bali": "Telung dasa siki",
+            "id": "Tiga Puluh Satu"
+        },
+        {
+            "bali": "Telung dasa kalih",
+            "id": "Tiga Puluh Dua"
+        },
+        {
+            "bali": "Telung dasa telu",
+            "id": "Tiga Puluh Tiga"
+        },
+        {
+            "bali": "Telung dasa papat",
+            "id": "Tiga Puluh Empat"
+        },
+        {
+            "bali": "Pesasur",
+            "id": "Tiga Puluh Lima"
+        },
+        {
+            "bali": "Telung dasa enem",
+            "id": "Tiga Puluh Enam"
+        },
+        {
+            "bali": "Telung dasa pitu",
+            "id": "Tiga Puluh Tujuh"
+        },
+        {
+            "bali": "Telung dasa kutus",
+            "id": "Tiga Puluh Delapan"
+        },
+        {
+            "bali": "Telung dasa sanga",
+            "id": "Tiga Puluh Sembilan"
+        },
+        {
+            "bali": "Petang dasa",
+            "id": "Empat Puluh"
+        },
+        {
+            "bali": "Petang dasa siki",
+            "id": "Empat Puluh Satu"
+        },
+        {
+            "bali": "Petang dasa kalih",
+            "id": "Empat Puluh Dua"
+        },
+        {
+            "bali": "Petang dasa telu",
+            "id": "Empat Puluh Tiga"
+        },
+        {
+            "bali": "Petang dasa papat",
+            "id": "Empat Puluh Empat"
+        },
+        {
+            "bali": "Setiman",
+            "id": "Empat Puluh Lima"
+        },
+        {
+            "bali": "Petang dasa enem",
+            "id": "Empat Puluh Enam"
+        },
+        {
+            "bali": "Petang dasa pitu",
+            "id": "Empat Puluh Tujuh"
+        },
+        {
+            "bali": "Petang dasa kutus",
+            "id": "Empat Puluh Delapan"
+        },
+        {
+            "bali": "Petang dasa sanga",
+            "id": "Empat Puluh Sembilan"
+        },
+        {
+            "bali": "Seket",
+            "id": "Lima Puluh"
+        },
+        {
+            "bali": "Limang dasa siki",
+            "id": "Lima Puluh Satu"
+        },
+        {
+            "bali": "Limang dasa kalih",
+            "id": "Lima Puluh Dua"
+        },
+        {
+            "bali": "Limang dasa telu",
+            "id": "Lima Puluh Tiga"
+        },
+        {
+            "bali": "Limang dasa papat",
+            "id": "Lima Puluh Empat"
+        },
+        {
+            "bali": "Limang dasa lima",
+            "id": "Lima Puluh Lima"
+        },
+        {
+            "bali": "Limang dasa enem",
+            "id": "Lima Puluh Enam"
+        },
+        {
+            "bali": "Limang dasa pitu",
+            "id": "Lima Puluh Tujuh"
+        },
+        {
+            "bali": "Limang dasa kutus",
+            "id": "Lima Puluh Delapan"
+        },
+        {
+            "bali": "Limang dasa sanga",
+            "id": "Lima Puluh Sembilan"
+        },
+        {
+            "bali": "Nem dasa",
+            "id": "Enam Puluh"
+        },
+        {
+            "bali": "Nem dasa siki",
+            "id": "Enam Puluh Satu"
+        },
+        {
+            "bali": "Nem dasa kalih",
+            "id": "Enam Puluh Dua"
+        },
+        {
+            "bali": "Nem dasa telu",
+            "id": "Enam Puluh Tiga"
+        },
+        {
+            "bali": "Nem dasa papat",
+            "id": "Enam Puluh Empat"
+        },
+        {
+            "bali": "Nem dasa lima",
+            "id": "Enam Puluh Lima"
+        },
+        {
+            "bali": "Nem dasa enem",
+            "id": "Enam Puluh Enam"
+        },
+        {
+            "bali": "Nem dasa pitu",
+            "id": "Enam Puluh Tujuh"
+        },
+        {
+            "bali": "Nem dasa kutus",
+            "id": "Enam Puluh Delapan"
+        },
+        {
+            "bali": "Nem dasa sanga",
+            "id": "Enam Puluh Sembilan"
+        },
+        {
+            "bali": "Pitung dasa",
+            "id": "Tujuh Puluh"
+        },
+        {
+            "bali": "Pitung dasa siki",
+            "id": "Tujuh Puluh Satu"
+        },
+        {
+            "bali": "Pitung dasa kalih",
+            "id": "Tujuh Puluh Dua"
+        },
+        {
+            "bali": "Pitung dasa telu",
+            "id": "Tujuh Puluh Tiga"
+        },
+        {
+            "bali": "Pitung dasa papat",
+            "id": "Tujuh Puluh Empat"
+        },
+        {
+            "bali": "Telung benang",
+            "id": "Tujuh Puluh Lima"
+        },
+        {
+            "bali": "Pitung dasa enem",
+            "id": "Tujuh Puluh Enam"
+        },
+        {
+            "bali": "Pitung dasa pitu",
+            "id": "Tujuh Puluh Tujuh"
+        },
+        {
+            "bali": "Pitung dasa kutus",
+            "id": "Tujuh Puluh Delapan"
+        },
+        {
+            "bali": "Pitung dasa sanga",
+            "id": "Tujuh Puluh Sembilan"
+        },
+        {
+            "bali": "Kutus dasa",
+            "id": "Delapan Puluh"
+        },
+        {
+            "bali": "Kutus dasa siki",
+            "id": "Delapan Puluh Satu"
+        },
+        {
+            "bali": "Kutus dasa kalih",
+            "id": "Delapan Puluh Dua"
+        },
+        {
+            "bali": "Kutus dasa telu",
+            "id": "Delapan Puluh Tiga"
+        },
+        {
+            "bali": "Kutus dasa papat",
+            "id": "Delapan Puluh Empat"
+        },
+        {
+            "bali": "Kutus dasa lima",
+            "id": "Delapan Puluh Lima"
+        },
+        {
+            "bali": "Kutus dasa enem",
+            "id": "Delapan Puluh Enam"
+        },
+        {
+            "bali": "Kutus dasa pitu",
+            "id": "Delapan Puluh Tujuh"
+        },
+        {
+            "bali": "Kutus dasa kutus",
+            "id": "Delapan Puluh Delapan"
+        },
+        {
+            "bali": "Kutus dasa sanga",
+            "id": "Delapan Puluh Sembilan"
+        },
+        {
+            "bali": "Sanga dasa",
+            "id": "Sembilan Puluh"
+        },
+        {
+            "bali": "Sanga dasa siki",
+            "id": "Sembilan Puluh Satu"
+        },
+        {
+            "bali": "Sanga dasa kalih",
+            "id": "Sembilan Puluh Dua"
+        },
+        {
+            "bali": "Sanga dasa telu",
+            "id": "Sembilan Puluh Tiga"
+        },
+        {
+            "bali": "Sanga dasa papat",
+            "id": "Sembilan Puluh Empat"
+        },
+        {
+            "bali": "Sanga dasa lima",
+            "id": "Sembilan Puluh Lima"
+        },
+        {
+            "bali": "Sanga dasa enem",
+            "id": "Sembilan Puluh Enam"
+        },
+        {
+            "bali": "Sanga dasa pitu",
+            "id": "Sembilan Puluh Tujuh"
+        },
+        {
+            "bali": "Sanga dasa kutus",
+            "id": "Sembilan Puluh Delapan"
+        },
+        {
+            "bali": "Sanga dasa sanga",
+            "id": "Sembilan Puluh Sembilan"
+        },
+        {
+            "bali": "Satus",
+            "id": "Seratus"
+        }
+    ],
+    "beburon_hewan": [
+        {
+            "bali": "Cicing / Asu",
+            "id": "Anjing"
+        },
+        {
+            "bali": "Meong / Posia",
+            "id": "Kucing"
+        },
+        {
+            "bali": "Siap / Ayam",
+            "id": "Ayam"
+        },
+        {
+            "bali": "Bebek / Onte",
+            "id": "Bebek"
+        },
+        {
+            "bali": "Celeng / Bawi",
+            "id": "Babi"
+        },
+        {
+            "bali": "Sampi / Banteng",
+            "id": "Sapi"
+        },
+        {
+            "bali": "Kebo / Karbwa",
+            "id": "Kerbau"
+        },
+        {
+            "bali": "Kambing",
+            "id": "Kambing"
+        },
+        {
+            "bali": "Jaran",
+            "id": "Kuda"
+        },
+        {
+            "bali": "Kedis / Paksi",
+            "id": "Burung"
+        },
+        {
+            "bali": "Be / Matsya",
+            "id": "Ikan"
+        },
+        {
+            "bali": "Bikul",
+            "id": "Tikus"
+        },
+        {
+            "bali": "Bojog / Wanara",
+            "id": "Monyet"
+        },
+        {
+            "bali": "Lelipan",
+            "id": "Ular"
+        },
+        {
+            "bali": "Legu",
+            "id": "Nyamuk"
+        },
+        {
+            "bali": "Buyung",
+            "id": "Lalat"
+        },
+        {
+            "bali": "Semut",
+            "id": "Semut"
+        },
+        {
+            "bali": "Buaya",
+            "id": "Buaya"
+        },
+        {
+            "bali": "Gajah",
+            "id": "Gajah"
+        },
+        {
+            "bali": "Macan",
+            "id": "Harimau / Macan"
+        },
+        {
+            "bali": "Lutung",
+            "id": "Kera Hitam"
+        },
+        {
+            "bali": "Kelesih",
+            "id": "Trenggiling"
+        },
+        {
+            "bali": "Kakul",
+            "id": "Siput / Bekicot"
+        },
+        {
+            "bali": "Yuyu",
+            "id": "Kepiting Sungai"
+        },
+        {
+            "bali": "Ubad / Punyan",
+            "id": "Ulat"
+        },
+        {
+            "bali": "Uler",
+            "id": "Ulat"
+        },
+        {
+            "bali": "Geleberan",
+            "id": "Kupu-kupu"
+        },
+        {
+            "bali": "Kupu-kupu",
+            "id": "Kupu-kupu"
+        },
+        {
+            "bali": "Seba",
+            "id": "Rayap"
+        },
+        {
+            "bali": "Capung",
+            "id": "Capung"
+        },
+        {
+            "bali": "Engajang",
+            "id": "Belalang"
+        },
+        {
+            "bali": "Kunyit-kunyit",
+            "id": "Kunang-kunang"
+        },
+        {
+            "bali": "Kawa-kawa",
+            "id": "Laba-laba"
+        },
+        {
+            "bali": "Tenggek",
+            "id": "Burung Raja Udang"
+        },
+        {
+            "bali": "Gagak",
+            "id": "Burung Gagak"
+        },
+        {
+            "bali": "Goak",
+            "id": "Burung Gagak"
+        },
+        {
+            "bali": "Petu",
+            "id": "Sigung"
+        },
+        {
+            "bali": "Sisian",
+            "id": "Kelabang"
+        },
+        {
+            "bali": "Lelipi",
+            "id": "Ular (Halus/Ketah)"
+        },
+        {
+            "bali": "Katak / Katung",
+            "id": "Katak"
+        },
+        {
+            "bali": "Dongkang",
+            "id": "Katak Besar / Kodok"
+        },
+        {
+            "bali": "Bengkulu",
+            "id": "Kelelawar Besar (Kalong)"
+        },
+        {
+            "bali": "Lelawah",
+            "id": "Kelelawar"
+        },
+        {
+            "bali": "Singsingan",
+            "id": "Singa"
+        },
+        {
+            "bali": "Kidang",
+            "id": "Kijang / Rusa"
+        },
+        {
+            "bali": "Menjangan",
+            "id": "Rusa"
+        },
+        {
+            "bali": "Kancil",
+            "id": "Kancil"
+        },
+        {
+            "bali": "Kelecing",
+            "id": "Tupai"
+        },
+        {
+            "bali": "Semal",
+            "id": "Tupai / Bajing"
+        },
+        {
+            "bali": "Kura-kura",
+            "id": "Kura-kura"
+        },
+        {
+            "bali": "Penyu",
+            "id": "Penyu"
+        },
+        {
+            "bali": "Kelesih",
+            "id": "Trenggiling"
+        },
+        {
+            "bali": "Landak",
+            "id": "Landak"
+        },
+        {
+            "bali": "Mregapati",
+            "id": "Singa (Sastra)"
+        },
+        {
+            "bali": "Garuda",
+            "id": "Burung Garuda"
+        },
+        {
+            "bali": "Sregala",
+            "id": "Serigala"
+        },
+        {
+            "bali": "Zebra",
+            "id": "Zebra"
+        },
+        {
+            "bali": "Silo",
+            "id": "Badak"
+        },
+        {
+            "bali": "Unta",
+            "id": "Unta"
+        },
+        {
+            "bali": "Jerapah",
+            "id": "Jerapah"
+        },
+        {
+            "bali": "Karangan",
+            "id": "Uang / Kerang"
+        },
+        {
+            "bali": "Tambulilingan",
+            "id": "Kumbang"
+        },
+        {
+            "bali": "Sampi",
+            "id": "Sapi (Ketah)"
+        },
+        {
+            "bali": "Bangke",
+            "id": "Bangkai (Konteks Hewan)"
+        },
+        {
+            "bali": "Kuuk",
+            "id": "Burung Hantu"
+        },
+        {
+            "bali": "Celepuk",
+            "id": "Burung Hantu (Kecil)"
+        },
+        {
+            "bali": "Sari",
+            "id": "Lebah"
+        },
+        {
+            "bali": "Nyangnyang",
+            "id": "Tawon kecil"
+        },
+        {
+            "bali": "Tabuan",
+            "id": "Tawon / Lebah Besar"
+        },
+        {
+            "bali": "Kutu",
+            "id": "Kutu"
+        },
+        {
+            "bali": "Titiran",
+            "id": "Burung Perkutut"
+        },
+        {
+            "bali": "Sangak",
+            "id": "Landak (Varian)"
+        },
+        {
+            "bali": "Bambang",
+            "id": "Kumbang Tanah"
+        },
+        {
+            "bali": "Klomang",
+            "id": "Kelomang / Umang-umang"
+        },
+        {
+            "bali": "Udang",
+            "id": "Udang"
+        },
+        {
+            "bali": "Sumi",
+            "id": "Cumi-cumi"
+        },
+        {
+            "bali": "Gurita",
+            "id": "Gurita"
+        },
+        {
+            "bali": "Paos",
+            "id": "Ikan Paus"
+        },
+        {
+            "bali": "Hiu",
+            "id": "Ikan Hiu"
+        },
+        {
+            "bali": "Lumba-lumba",
+            "id": "Lumba-lumba"
+        },
+        {
+            "bali": "Kambing Alas",
+            "id": "Kambing Hutan"
+        },
+        {
+            "bali": "Kasuari",
+            "id": "Burung Kasuari"
+        },
+        {
+            "bali": "Merak",
+            "id": "Burung Merak"
+        },
+        {
+            "bali": "Be Julit",
+            "id": "Belut Hutan / Sidat"
+        },
+        {
+            "bali": "Lelipi Piton",
+            "id": "Ular Sanca / Piton"
+        },
+        {
+            "bali": "Blatuk",
+            "id": "Burung Pelatuk"
+        },
+        {
+            "bali": "Kori",
+            "id": "Burung Beo"
+        },
+        {
+            "bali": "Sesapi",
+            "id": "Burung Layang-layang"
+        },
+        {
+            "bali": "Bango",
+            "id": "Burung Bangau"
+        },
+        {
+            "bali": "Belibis",
+            "id": "Burung Belibis"
+        },
+        {
+            "bali": "Enggang",
+            "id": "Burung Enggang"
+        },
+        {
+            "bali": "Kele",
+            "id": "Lebah Tanpa Sengat (Trigona)"
+        },
+        {
+            "bali": "Kutu Badeng",
+            "id": "Kutu Hitam"
+        },
+        {
+            "bali": "Capung Badeng",
+            "id": "Capung Hitam"
+        },
+        {
+            "bali": "Balang",
+            "id": "Belalang (Ketah)"
+        },
+        {
+            "bali": "Balang Keket",
+            "id": "Belalang Sembah"
+        },
+        {
+            "bali": "Gumatat-gumitit",
+            "id": "Serangga / Hewan Kecil"
+        },
+        {
+            "bali": "Panggang",
+            "id": "Kadal"
+        },
+        {
+            "bali": "Bongkot",
+            "id": "Kadal Besar"
+        },
+        {
+            "bali": "Sidat",
+            "id": "Ikan Sidat"
+        }
+    ],
+    "woh_wohan_buah": [
+        {
+            "bali": "Biyu",
+            "id": "Pisang"
+        },
+        {
+            "bali": "Sumaga",
+            "id": "Jeruk"
+        },
+        {
+            "bali": "Semangka",
+            "id": "Semangka"
+        },
+        {
+            "bali": "Pooh",
+            "id": "Mangga"
+        },
+        {
+            "bali": "Nyuh",
+            "id": "Kelapa"
+        },
+        {
+            "bali": "Duren",
+            "id": "Durian"
+        },
+        {
+            "bali": "Manggis",
+            "id": "Manggis"
+        },
+        {
+            "bali": "Salak",
+            "id": "Salak"
+        },
+        {
+            "bali": "Nanas",
+            "id": "Nanas"
+        },
+        {
+            "bali": "Nangka",
+            "id": "Nangka"
+        },
+        {
+            "bali": "Srikaya",
+            "id": "Srikaya"
+        },
+        {
+            "bali": "Sawi / Sawu",
+            "id": "Sawo"
+        },
+        {
+            "bali": "Inyam / Anyam",
+            "id": "Jambu Biji"
+        },
+        {
+            "bali": "Nyambu",
+            "id": "Jambu"
+        },
+        {
+            "bali": "Nyambu Air",
+            "id": "Jambu Air"
+        },
+        {
+            "bali": "Nyambu Bol",
+            "id": "Jambu Bol"
+        },
+        {
+            "bali": "Sunti / Ceremai",
+            "id": "Ceremai"
+        },
+        {
+            "bali": "Boni",
+            "id": "Buni"
+        },
+        {
+            "bali": "Sentul",
+            "id": "Kecapi / Sentul"
+        },
+        {
+            "bali": "Wani",
+            "id": "Binjai (Kerabat Mangga)"
+        },
+        {
+            "bali": "Juet",
+            "id": "Duwet / Jamblang"
+        },
+        {
+            "bali": "Buluan / Rambutan",
+            "id": "Rambutan"
+        },
+        {
+            "bali": "Papaya / Gedang",
+            "id": "Pepaya"
+        },
+        {
+            "bali": "Tepos / Markisa",
+            "id": "Markisa"
+        },
+        {
+            "bali": "Gedang Kastela",
+            "id": "Pepaya (Varian)"
+        },
+        {
+            "bali": "Sirsak",
+            "id": "Sirsak"
+        },
+        {
+            "bali": "Gula Pasir (Salak)",
+            "id": "Salak Gula Pasir"
+        },
+        {
+            "bali": "Tiing / Rebung",
+            "id": "Bambu (Konteks Rebung)"
+        },
+        {
+            "bali": "Bligo",
+            "id": "Bligo / Kundur"
+        },
+        {
+            "bali": "Sukun",
+            "id": "Sukun"
+        },
+        {
+            "bali": "Keluih",
+            "id": "Kluwih"
+        },
+        {
+            "bali": "Timun",
+            "id": "Timun"
+        },
+        {
+            "bali": "Carma / Kurma",
+            "id": "Kurma"
+        },
+        {
+            "bali": "Anggur",
+            "id": "Anggur"
+        },
+        {
+            "bali": "Apel",
+            "id": "Apel"
+        },
+        {
+            "bali": "Pir",
+            "id": "Pir"
+        },
+        {
+            "bali": "Melon",
+            "id": "Melon"
+        },
+        {
+            "bali": "Alpukat",
+            "id": "Alpukat"
+        },
+        {
+            "bali": "Stroberi",
+            "id": "Stroberi"
+        },
+        {
+            "bali": "Sregading",
+            "id": "Delima"
+        },
+        {
+            "bali": "Dalima",
+            "id": "Delima"
+        },
+        {
+            "bali": "Cermai",
+            "id": "Ceremai"
+        },
+        {
+            "bali": "Belimbing",
+            "id": "Belimbing"
+        },
+        {
+            "bali": "Belimbing Buluh",
+            "id": "Belimbing Wuluh"
+        },
+        {
+            "bali": "Asam / Celagi",
+            "id": "Asam Jawa"
+        },
+        {
+            "bali": "Gowok",
+            "id": "Kupa / Gowok"
+        },
+        {
+            "bali": "Kemiri / Tingkih",
+            "id": "Kemiri"
+        },
+        {
+            "bali": "Kepundung / Mundung",
+            "id": "Kepundung"
+        },
+        {
+            "bali": "Ceruring",
+            "id": "Duku / Langsat"
+        },
+        {
+            "bali": "Lansat",
+            "id": "Langsat"
+        },
+        {
+            "bali": "Duku",
+            "id": "Duku"
+        },
+        {
+            "bali": "Soga",
+            "id": "Buah Soga"
+        },
+        {
+            "bali": "Kecacil",
+            "id": "Buah Kecacil (Kersen)"
+        },
+        {
+            "bali": "Tal",
+            "id": "Siwalan / Lontar"
+        },
+        {
+            "bali": "Ental",
+            "id": "Buah Lontar"
+        },
+        {
+            "bali": "Jaka / Enau",
+            "id": "Kolang-kaling (Aren)"
+        },
+        {
+            "bali": "Beluluk",
+            "id": "Kolang-kaling"
+        },
+        {
+            "bali": "Buah Malaka",
+            "id": "Malaka / Amla"
+        },
+        {
+            "bali": "Namnam",
+            "id": "Namnam"
+        },
+        {
+            "bali": "Maja",
+            "id": "Beraja / Maja"
+        },
+        {
+            "bali": "Kates",
+            "id": "Pepaya (Ketah)"
+        },
+        {
+            "bali": "Pooh Golek",
+            "id": "Mangga Golek"
+        },
+        {
+            "bali": "Pooh Gadung",
+            "id": "Mangga Arumanis / Gadung"
+        },
+        {
+            "bali": "Pooh Lalijiwa",
+            "id": "Mangga Lalijiwa"
+        },
+        {
+            "bali": "Pooh Cantek",
+            "id": "Mangga Manalagi"
+        },
+        {
+            "bali": "Biyu Mas",
+            "id": "Pisang Mas"
+        },
+        {
+            "bali": "Biyu Raja",
+            "id": "Pisang Raja"
+        },
+        {
+            "bali": "Biyu Susu",
+            "id": "Pisang Susu"
+        },
+        {
+            "bali": "Biyu Batu",
+            "id": "Pisang Klutuk / Biji"
+        },
+        {
+            "bali": "Biyu Ambon",
+            "id": "Pisang Ambon"
+        },
+        {
+            "bali": "Biyu Kayu",
+            "id": "Pisang Tanduk"
+        },
+        {
+            "bali": "Biyu Cere",
+            "id": "Pisang Kepok"
+        },
+        {
+            "bali": "Sumaga Lemon",
+            "id": "Lemon"
+        },
+        {
+            "bali": "Sumaga Nipis",
+            "id": "Jeruk Nipis"
+        },
+        {
+            "bali": "Sumaga Purut",
+            "id": "Jeruk Purut"
+        },
+        {
+            "bali": "Sumaga Bali",
+            "id": "Jeruk Bali"
+        },
+        {
+            "bali": "Nyuh Bulan",
+            "id": "Kelapa Gading / Bulan"
+        },
+        {
+            "bali": "Nyuh Mulung",
+            "id": "Kelapa Hijau Obat"
+        },
+        {
+            "bali": "Nyuh Udang",
+            "id": "Kelapa Udang (Kemerahan)"
+        },
+        {
+            "bali": "Jambu Klutuk",
+            "id": "Jambu Biji"
+        },
+        {
+            "bali": "Coklat / Kakao",
+            "id": "Cokelat / Kakao"
+        },
+        {
+            "bali": "Kopi",
+            "id": "Kopi (Buah Kopi)"
+        },
+        {
+            "bali": "Pala",
+            "id": "Pala"
+        },
+        {
+            "bali": "Cengkeh",
+            "id": "Cengkih"
+        },
+        {
+            "bali": "Lada",
+            "id": "Lada / Merica"
+        },
+        {
+            "bali": "Cabe / Tabia",
+            "id": "Cabai"
+        },
+        {
+            "bali": "Tabia Bun",
+            "id": "Cabai Jawa / Jamu"
+        },
+        {
+            "bali": "Kapulaga",
+            "id": "Kapulaga"
+        },
+        {
+            "bali": "Zaitun",
+            "id": "Zaitun"
+        },
+        {
+            "bali": "Tomat",
+            "id": "Tomat"
+        },
+        {
+            "bali": "Terong",
+            "id": "Terong"
+        },
+        {
+            "bali": "Waluh",
+            "id": "Labu Parang / Labu Kuning"
+        },
+        {
+            "bali": "Labu Siam",
+            "id": "Labu Siam"
+        },
+        {
+            "bali": "Paria",
+            "id": "Pare"
+        },
+        {
+            "bali": "Kecipir",
+            "id": "Kecipir"
+        },
+        {
+            "bali": "Kelor",
+            "id": "Buah Kelor (Klentang)"
+        },
+        {
+            "bali": "Mengkudu / Tibah",
+            "id": "Mengkudu / Pace"
+        },
+        {
+            "bali": "Grendang",
+            "id": "Buah Seri / Kersen"
+        },
+        {
+            "bali": "Dewandaru",
+            "id": "Dewandaru"
+        },
+        {
+            "bali": "Bidara / Widara",
+            "id": "Bidara"
+        }
+    ],
+    "angga_tubuh": [
+        {
+            "bali": "Prabu / Sirah / Awak",
+            "id": "Kepala"
+        },
+        {
+            "bali": "Bok / Rambut",
+            "id": "Rambut"
+        },
+        {
+            "bali": "Prerai / Muka / Dai",
+            "id": "Wajah / Muka"
+        },
+        {
+            "bali": "Sila / Gidat",
+            "id": "Dahi / Kening"
+        },
+        {
+            "bali": "Alis",
+            "id": "Alis"
+        },
+        {
+            "bali": "Penyingakan / Mata",
+            "id": "Mata"
+        },
+        {
+            "bali": "Karna / Kuping",
+            "id": "Kuping / Telinga"
+        },
+        {
+            "bali": "Irung / Cunguh",
+            "id": "Hidung"
+        },
+        {
+            "bali": "Cangkem / Lontong / Tutuk",
+            "id": "Mulut"
+        },
+        {
+            "bali": "Layah / Iwa",
+            "id": "Lidah"
+        },
+        {
+            "bali": "Untu / Untu",
+            "id": "Gigi (Biasa)"
+        },
+        {
+            "bali": "Waja",
+            "id": "Gigi (Alis)"
+        },
+        {
+            "bali": "Libe / Lambe",
+            "id": "Bibir"
+        },
+        {
+            "bali": "Kumis",
+            "id": "Kumis"
+        },
+        {
+            "bali": "Jenggot",
+            "id": "Jenggot"
+        },
+        {
+            "bali": "Pipi",
+            "id": "Pipi"
+        },
+        {
+            "bali": "Jagut / Singgaman",
+            "id": "Dagu"
+        },
+        {
+            "bali": "Baong / Gulu",
+            "id": "Leher"
+        },
+        {
+            "bali": "Kanta",
+            "id": "Tenggorokan"
+        },
+        {
+            "bali": "Pala / Pundak",
+            "id": "Bahu / Pundak"
+        },
+        {
+            "bali": "Tangan / Lengan",
+            "id": "Tangan / Lengan"
+        },
+        {
+            "bali": "Sikut",
+            "id": "Sikut"
+        },
+        {
+            "bali": "Jerigi / Jari",
+            "id": "Jari Tangan"
+        },
+        {
+            "bali": "Inan Jari",
+            "id": "Ibu Jari / Jempol"
+        },
+        {
+            "bali": "Jari Telunjuk",
+            "id": "Jari Telunjuk"
+        },
+        {
+            "bali": "Jari Bunter / Jari Tengah",
+            "id": "Jari Tengah"
+        },
+        {
+            "bali": "Jari Manis",
+            "id": "Jari Manis"
+        },
+        {
+            "bali": "Jari Kacing / Kelingking",
+            "id": "Jari Kelingking"
+        },
+        {
+            "bali": "Kuku / Nakha",
+            "id": "Kuku"
+        },
+        {
+            "bali": "Dada / Tendas Dada",
+            "id": "Dada"
+        },
+        {
+            "bali": "Susu / Nyonyo",
+            "id": "Payudara / Susu"
+        },
+        {
+            "bali": "Basang / Wedana / Grah",
+            "id": "Perut"
+        },
+        {
+            "bali": "Puser / Puseran",
+            "id": "Pusar"
+        },
+        {
+            "bali": "Sukur / Entud / Batis",
+            "id": "Kaki"
+        },
+        {
+            "bali": "Entud / Jengku",
+            "id": "Lutut"
+        },
+        {
+            "bali": "Batis / Cokor",
+            "id": "Kaki (Bagian Bawah)"
+        },
+        {
+            "bali": "Tungkak / Tungkakan",
+            "id": "Tumit"
+        },
+        {
+            "bali": "Dlamakan Batis",
+            "id": "Telapak Kaki"
+        },
+        {
+            "bali": "Dlamakan Tangan",
+            "id": "Telapak Tangan"
+        },
+        {
+            "bali": "Gonggongan / Kelek",
+            "id": "Ketiak"
+        },
+        {
+            "bali": "Susu Adeg / Wetis",
+            "id": "Betis"
+        },
+        {
+            "bali": "Silit / Tundun Silit",
+            "id": "Pantat"
+        },
+        {
+            "bali": "Tundun",
+            "id": "Punggung"
+        },
+        {
+            "bali": "Iga",
+            "id": "Tulang Rusuk / Iga"
+        },
+        {
+            "bali": "Hati / Angkihan",
+            "id": "Hati (Organ)"
+        },
+        {
+            "bali": "Paru-paru",
+            "id": "Paru-paru"
+        },
+        {
+            "bali": "Jantung",
+            "id": "Jantung"
+        },
+        {
+            "bali": "Getih / Rah",
+            "id": "Darah"
+        },
+        {
+            "bali": "Prasawa / Otot",
+            "id": "Otot / Urat"
+        },
+        {
+            "bali": "Tulang / Asti",
+            "id": "Tulang"
+        },
+        {
+            "bali": "Bulu",
+            "id": "Bulu"
+        },
+        {
+            "bali": "Bulu Mata",
+            "id": "Bulu Mata"
+        },
+        {
+            "bali": "Bulu Baong",
+            "id": "Bulu Kuduk"
+        },
+        {
+            "bali": "Kulit / Twaca",
+            "id": "Kulit"
+        },
+        {
+            "bali": "Otak / Utak",
+            "id": "Otak"
+        },
+        {
+            "bali": "Papadian",
+            "id": "Ulu Hati"
+        },
+        {
+            "bali": "Isit",
+            "id": "Gusi"
+        },
+        {
+            "bali": "Idas / Peninggalan",
+            "id": "Kelopak Mata"
+        },
+        {
+            "bali": "Kuping Dalam",
+            "id": "Gendang Telinga"
+        },
+        {
+            "bali": "Kolongan / Jenggot",
+            "id": "Jakun"
+        },
+        {
+            "bali": "Enggok / Gulu",
+            "id": "Tengkuk"
+        },
+        {
+            "bali": "Entud Sané Alus / Jengku",
+            "id": "Tempurung Lutut"
+        },
+        {
+            "bali": "Pergelangan Tangan",
+            "id": "Pergelangan Tangan"
+        },
+        {
+            "bali": "Pergelangan Batis",
+            "id": "Pergelangan Kaki"
+        },
+        {
+            "bali": "Lengkeng / Mata Batis",
+            "id": "Mata Kaki"
+        },
+        {
+            "bali": "Paha / Pupuh",
+            "id": "Paha"
+        },
+        {
+            "bali": "Wewengkon Lelunakan",
+            "id": "Pinggang"
+        },
+        {
+            "bali": "Sula / Lambung",
+            "id": "Lambung / Pinggir Perut"
+        },
+        {
+            "bali": "Empedu",
+            "id": "Empedu"
+        },
+        {
+            "bali": "Kinangan / Ginjal",
+            "id": "Ginjal"
+        },
+        {
+            "bali": "Usus",
+            "id": "Usus"
+        },
+        {
+            "bali": "Panyama / Plasenta",
+            "id": "Ari-ari / Plasenta"
+        },
+        {
+            "bali": "Ami / Ari-ari",
+            "id": "Tali Pusar"
+        },
+        {
+            "bali": "Kandung Kemih",
+            "id": "Kandung Kemih"
+        },
+        {
+            "bali": "Inan Batis",
+            "id": "Ibu Jari Kaki"
+        },
+        {
+            "bali": "Lepisan / Pelipisan",
+            "id": "Pelipis"
+        },
+        {
+            "bali": "Bulu Caling / Kumis",
+            "id": "Bulu Jenggot"
+        },
+        {
+            "bali": "Luhur / Langit-langit",
+            "id": "Langit-langit Mulut"
+        },
+        {
+            "bali": "Tenggek",
+            "id": "Pangkal Kepala / Leher Belakang"
+        },
+        {
+            "bali": "Gading / Tulang Gading",
+            "id": "Tulang Selangka"
+        },
+        {
+            "bali": "Tulang Tundun",
+            "id": "Tulang Belakang"
+        },
+        {
+            "bali": "Tulang Ikut",
+            "id": "Tulang Ekor"
+        },
+        {
+            "bali": "Panggal / Tulang Dada",
+            "id": "Tulang Dada"
+        },
+        {
+            "bali": "Giing / Gulu",
+            "id": "Kerongkongan"
+        },
+        {
+            "bali": "Bebatukan",
+            "id": "Pergelangan Tangan Bagian Dalam"
+        },
+        {
+            "bali": "Lelunakan / Pinggul",
+            "id": "Pinggul"
+        },
+        {
+            "bali": "Susu / Puting Susu",
+            "id": "Puting Payudara"
+        },
+        {
+            "bali": "Kaling / Gakar",
+            "id": "Tumit Kaki Belakang"
+        },
+        {
+            "bali": "Kokos / Kuku Batis",
+            "id": "Kuku Kaki"
+        },
+        {
+            "bali": "Bulu Ketiak",
+            "id": "Bulu Ketiak"
+        },
+        {
+            "bali": "Arem",
+            "id": "Lengan Atas"
+        },
+        {
+            "bali": "Panyerikan / Jari Kacing Batis",
+            "id": "Kelingking Kaki"
+        },
+        {
+            "bali": "Otot Batis",
+            "id": "Urat Kaki"
+        },
+        {
+            "bali": "Sumsum",
+            "id": "Sumsum Tulang"
+        },
+        {
+            "bali": "Daging / Masa",
+            "id": "Daging / Otot Tubuh"
+        },
+        {
+            "bali": "Lid lid",
+            "id": "Anak Lidah"
+        },
+        {
+            "bali": "Tatu",
+            "id": "Luka (Konteks Kulit Tubuh)"
+        },
+        {
+            "bali": "Pepusuan",
+            "id": "Hati / Sanubari (Fisik Jantung)"
+        },
+        {
+            "bali": "Anak-anakan Mata",
+            "id": "Pupil Mata"
+        },
+        {
+            "bali": "Lid / Bulu Alis",
+            "id": "Rambut Alis"
+        }
+    ], "nulis_aksara_bali": [
+        {
+            "bali": "ᬳ",
+            "id": "ha"
+        },
+        {
+            "bali": "ᬦ",
+            "id": "na"
+        },
+        {
+            "bali": "ᬘ",
+            "id": "ca"
+        },
+        {
+            "bali": "ᬭ",
+            "id": "ra"
+        },
+        {
+            "bali": "ᬓ",
+            "id": "ka"
+        },
+        {
+            "bali": "ᬤ",
+            "id": "da"
+        },
+        {
+            "bali": "ᬢ",
+            "id": "ta"
+        },
+        {
+            "bali": "ᬲ",
+            "id": "sa"
+        },
+        {
+            "bali": "ᬯ",
+            "id": "wa"
+        },
+        {
+            "bali": "ᬮ",
+            "id": "la"
+        },
+        {
+            "bali": "ᬫ",
+            "id": "ma"
+        },
+        {
+            "bali": "ᬕ",
+            "id": "ga"
+        },
+        {
+            "bali": "ᬩ",
+            "id": "ba"
+        },
+        {
+            "bali": "ᬗ",
+            "id": "nga"
+        },
+        {
+            "bali": "ᬧ",
+            "id": "pa"
+        },
+        {
+            "bali": "ᬚ",
+            "id": "ja"
+        },
+        {
+            "bali": "ᬜ",
+            "id": "nya"
+        },
+        {
+            "bali": "ᬞ",
+            "id": "tha"
+        },
+        {
+            "bali": "ᬶ",
+            "id": "ulu (i)"
+        },
+        {
+            "bali": "ᬸ",
+            "id": "suku (u)"
+        },
+        {
+            "bali": "ᬾ",
+            "id": "taling (e)"
+        },
+        {
+            "bali": "ᬾᬤᬵ",
+            "id": "taling tedong (o)"
+        },
+        {
+            "bali": "ᬾᬦ",
+            "id": "pepet (e pepet)"
+        },
+        {
+            "bali": "ᬷ",
+            "id": "ulu sari (ii)"
+        },
+        {
+            "bali": "ᬹ",
+            "id": "suku ilut (uu)"
+        },
+        {
+            "bali": "ᬗᬶ",
+            "id": "cecek (ng)"
+        },
+        {
+            "bali": "ᬃ",
+            "id": "surang (r)"
+        },
+        {
+            "bali": "ᬄ",
+            "id": "bisah (h)"
+        },
+        {
+            "bali": "ᬺ",
+            "id": "guwung (ra)"
+        },
+        {
+            "bali": "ᬓ᭄ᬯ",
+            "id": "suku kembung (wa)"
+        },
+        {
+            "bali": "᭄",
+            "id": "adeg-adeg"
+        },
+        {
+            "bali": "ᬅ",
+            "id": "akara (A)"
+        },
+        {
+            "bali": "ᬇ",
+            "id": "ikara (I)"
+        },
+        {
+            "bali": "ᬉ",
+            "id": "ukara (U)"
+        },
+        {
+            "bali": "ᬏ",
+            "id": "ekara (E)"
+        },
+        {
+            "bali": "ᬑ",
+            "id": "okara (O)"
+        },
+        {
+            "bali": "᭐",
+            "id": "0 (windu)"
+        },
+        {
+            "bali": "᭑",
+            "id": "1 (siki)"
+        },
+        {
+            "bali": "᭒",
+            "id": "2 (kalih)"
+        },
+        {
+            "bali": "᭓",
+            "id": "3 (tiga)"
+        },
+        {
+            "bali": "᭔",
+            "id": "4 (papat)"
+        },
+        {
+            "bali": "᭕",
+            "id": "5 (lima)"
+        },
+        {
+            "bali": "᭖",
+            "id": "6 (nem)"
+        },
+        {
+            "bali": "᭗",
+            "id": "7 (pitu)"
+        },
+        {
+            "bali": "᭘",
+            "id": "8 (kutus)"
+        },
+        {
+            "bali": "᭙",
+            "id": "9 (sanga)"
+        },
+        {
+            "bali": "ᬩᬧ",
+            "id": "bapa"
+        },
+        {
+            "bali": "ᬾᬫᬾᬫ",
+            "id": "meme"
+        },
+        {
+            "bali": "ᬘᬶᬘᬶᬗᬶ",
+            "id": "cicing"
+        },
+        {
+            "bali": "ᬳᬸᬫᬄ",
+            "id": "umah"
+        },
+        {
+            "bali": "ᬩᬸᬓᬸ",
+            "id": "buku"
+        },
+        {
+            "bali": "ᬭᬚ",
+            "id": "raja"
+        },
+        {
+            "bali": "ᬕᬚᬄ",
+            "id": "gajah"
+        },
+        {
+            "bali": "ᬦᬲᬶ",
+            "id": "nasi"
+        },
+        {
+            "bali": "ᬢᬮᬶ",
+            "id": "tali"
+        },
+        {
+            "bali": "ᬾᬓᬵᬧᬶ",
+            "id": "kopi"
+        },
+        {
+            "bali": "ᬲᬾᬢ",
+            "id": "sate"
+        },
+        {
+            "bali": "ᬚᬚᬾ",
+            "id": "jaje"
+        },
+        {
+            "bali": "ᬤᬤᬶ",
+            "id": "dadi"
+        },
+        {
+            "bali": "ᬫᬸᬮ",
+            "id": "mula"
+        },
+        {
+            "bali": "ᬯᬬᬄ",
+            "id": "wayah"
+        },
+        {
+            "bali": "ᬓᬘᬗᬶ",
+            "id": "kacang"
+        },
+        {
+            "bali": "ᬩᬶᬬᬸ",
+            "id": "biyu"
+        },
+        {
+            "bali": "ᬦᬦᬲ᭄",
+            "id": "nanas"
+        },
+        {
+            "bali": "ᬲᬮᬓ᭄",
+            "id": "salak"
+        },
+        {
+            "bali": "ᬓᭂᬤᬶᬲ᭄",
+            "id": "kedis"
+        },
+        {
+            "bali": "ᬚᬭᬦ᭄",
+            "id": "jaran"
+        },
+        {
+            "bali": "ᬾᬫᬵᬗ᭄",
+            "id": "meong"
+        },
+        {
+            "bali": "ᬩᬾᬩᬾᬓ᭄",
+            "id": "bebek"
+        },
+        {
+            "bali": "ᬲᬫ᭄ᬧᬶ",
+            "id": "sampi"
+        },
+        {
+            "bali": "ᬩᬶᬓᬸᬮ᭄",
+            "id": "bikul"
+        },
+        {
+            "bali": "ᬩᭀᬚᭀᬕ᭄",
+            "id": "bojog"
+        },
+        {
+            "bali": "ᬳᬬᬫ᭄",
+            "id": "ayam"
+        },
+        {
+            "bali": "ᬳᬸᬤᬗᬶ",
+            "id": "udang"
+        },
+        {
+            "bali": "ᬬᬸᬬᬸ",
+            "id": "yuyu"
+        },
+        {
+            "bali": "ᬾᬢᬾᬫ᭄ᬧᬾ",
+            "id": "tempe"
+        },
+        {
+            "bali": "ᬢᬳᬸ",
+            "id": "tahu"
+        },
+        {
+            "bali": "ᬬᬾᬄ",
+            "id": "yeh"
+        },
+        {
+            "bali": "ᬫᬦᬶᬲ᭄",
+            "id": "manis"
+        },
+        {
+            "bali": "ᬧᬳᬶᬢ᭄",
+            "id": "pahit"
+        },
+        {
+            "bali": "ᬾᬳᬵᬕᬾᬳᬵᬕ᭄",
+            "id": "ogoh-ogoh"
+        },
+        {
+            "bali": "ᬾᬯᬵᬦᬶ",
+            "id": "wani"
+        },
+        {
+            "bali": "ᬤᬸᬭᬾᬦ᭄",
+            "id": "duren"
+        },
+        {
+            "bali": "ᬫᬗ᭄ᬕᬶᬲ᭄",
+            "id": "manggis"
+        },
+        {
+            "bali": "ᬾᬧᭀᬄ",
+            "id": "pooh"
+        },
+        {
+            "bali": "ᬾᬚᭂᬫ᭄ᬩᬾᬄ",
+            "id": "jembeh"
+        },
+        {
+            "bali": "ᬚᬾᬫ᭄ᬩᬭᬦ",
+            "id": "jembrana"
+        },
+        {
+            "bali": "ᬩᬸᬮᬾᬮᬾᬗᬶ",
+            "id": "buleleng"
+        },
+        {
+            "bali": "ᬩᬤᬸᬗᬶ",
+            "id": "badung"
+        },
+        {
+            "bali": "ᬩᬗ᭄ᬮᬶ",
+            "id": "bangli"
+        },
+        {
+            "bali": "ᬢᬵᬦᬵᬄ",
+            "id": "tanah"
+        },
+        {
+            "bali": "ᬮᬵᬳᬸᬢ᭄",
+            "id": "lahut"
+        },
+        {
+            "bali": "ᬾᬢᭀᬓᭀ",
+            "id": "toko"
+        },
+        {
+            "bali": "ᬚᬮᬦ᭄",
+            "id": "jalan"
+        },
+        {
+            "bali": "ᬧᬲᬵᬃ",
+            "id": "pasar"
+        },
+        {
+            "bali": "ᬾᬤᬾᬯᬵ",
+            "id": "dewa"
+        },
+        {
+            "bali": "ᬪᬹᬫᬶ",
+            "id": "bhumi"
+        },
+        {
+            "bali": "ᬰᬵᬲ᭄ᬢ᭄ᬭ",
+            "id": "sastra"
+        },
+        {
+            "bali": "᭞",
+            "id": "carik siki (,)"
+        },
+        {
+            "bali": "᭟",
+            "id": "carik kalih (.)"
+        }
+    ]
+}

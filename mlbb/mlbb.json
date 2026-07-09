@@ -1,0 +1,1214 @@
+{
+    "counter_item": [
+        {
+            "soal": "Item Defense wajib untuk men-counter Physical Lifesteal / Regen tinggi adalah...",
+            "jawaban": "Dominance Ice"
+        },
+        {
+            "soal": "Item untuk mengurangi efek Shield dan HP Regen musuh (Mage) adalah...",
+            "jawaban": "Necklace of Durance"
+        },
+        {
+            "soal": "Item untuk mengurangi efek HP Regen musuh (Physical) adalah...",
+            "jawaban": "Sea Halberd"
+        },
+        {
+            "soal": "Item untuk menahan Burst Magic Damage tinggi adalah...",
+            "jawaban": "Athena's Shield"
+        },
+        {
+            "soal": "Item untuk menahan DPS Magic Damage (seperti Chang'e) adalah...",
+            "jawaban": "Radiant Armor"
+        },
+        {
+            "soal": "Item untuk menahan Physical Burst Damage (seperti Aldous) adalah...",
+            "jawaban": "Twilight Armor"
+        },
+        {
+            "soal": "Item untuk men-counter Marksman Attack Speed tinggi adalah...",
+            "jawaban": "Blade Armor"
+        },
+        {
+            "soal": "Item untuk menembus Physical Defense Tank adalah...",
+            "jawaban": "Malefic Roar"
+        },
+        {
+            "soal": "Item untuk menembus Magic Defense musuh adalah...",
+            "jawaban": "Divine Glaive"
+        },
+        {
+            "soal": "Item yang memberikan efek slow saat menyerang dengan skill adalah...",
+            "jawaban": "Ice Queen Wand"
+        },
+        {
+            "soal": "Item untuk memberikan efek slow pada basic attack adalah...",
+            "jawaban": "Corrosion Scythe"
+        },
+        {
+            "soal": "Item yang memberikan efek kekebalan sementara saat sekarat (Physical) adalah...",
+            "jawaban": "Wind of Nature"
+        },
+        {
+            "soal": "Item yang memberikan efek kekebalan sementara saat sekarat (Magic) adalah...",
+            "jawaban": "Winter Crown"
+        },
+        {
+            "soal": "Item untuk meningkatkan penetrasi physical dan cooldown reduction adalah...",
+            "jawaban": "Hunter Strike"
+        },
+        {
+            "soal": "Item untuk menambah movement speed dan damage setelah menggunakan skill adalah...",
+            "jawaban": "Blade of the Heptaseas"
+        },
+        {
+            "soal": "Item untuk menambah damage berdasarkan HP lawan adalah...",
+            "jawaban": "Demon Hunter Sword"
+        },
+        {
+            "soal": "Item untuk meningkatkan critical chance dan damage adalah...",
+            "jawaban": "Berserker's Fury"
+        },
+        {
+            "soal": "Item yang memberikan spell vamp dan cooldown reduction (Mage) adalah...",
+            "jawaban": "Concentrated Energy"
+        },
+        {
+            "soal": "Item yang memberikan efek ledakan magic setelah memberikan skill adalah...",
+            "jawaban": "Lightning Truncheon"
+        },
+        {
+            "soal": "Item untuk menambah HP yang sangat besar bagi tank adalah...",
+            "jawaban": "Guardian Helmet"
+        },
+        {
+            "soal": "Item untuk mendapatkan efek regen HP setiap kali membunuh musuh adalah...",
+            "jawaban": "Blood Axe"
+        },
+        {
+            "soal": "Item untuk meningkatkan serangan setelah menggunakan basic attack (Mage) adalah...",
+            "jawaban": "Calamity Reaper"
+        },
+        {
+            "soal": "Item untuk memberikan damage tambahan berupa true damage adalah...",
+            "jawaban": "Endless Battle"
+        },
+        {
+            "soal": "Item yang memberikan regenerasi mana dan cooldown reduction adalah...",
+            "jawaban": "Enchanted Talisman"
+        },
+        {
+            "soal": "Item untuk mempercepat regenerasi mana dan menambah HP bagi support adalah...",
+            "jawaban": "Flask of the Oasis"
+        },
+        {
+            "soal": "Item untuk mengurangi damage critical dari lawan adalah...",
+            "jawaban": "Antique Cuirass"
+        },
+        {
+            "soal": "Item yang memberikan tambahan damage ketika HP hero penuh adalah...",
+            "jawaban": "Blade of Despair"
+        },
+        {
+            "soal": "Item sepatu untuk mengurangi durasi CC musuh adalah...",
+            "jawaban": "Tough Boots"
+        },
+        {
+            "soal": "Item sepatu untuk menambah physical defense adalah...",
+            "jawaban": "Warrior Boots"
+        },
+        {
+            "soal": "Item sepatu untuk menambah kecepatan gerak (roam) adalah...",
+            "jawaban": "Rapid Boots"
+        },
+        {
+            "soal": "Item untuk mendapatkan ekstra gold saat assist adalah...",
+            "jawaban": "Roaming Item (Favor/Encourage/Dire Hit)"
+        },
+        {
+            "soal": "Item untuk meningkatkan damage area bagi hero mage adalah...",
+            "jawaban": "Glowing Wand"
+        },
+        {
+            "soal": "Item untuk mendapatkan magic lifesteal yang besar adalah...",
+            "jawaban": "Ice Queen Wand"
+        },
+        {
+            "soal": "Item untuk menahan serangan physical secara bertahap adalah...",
+            "jawaban": "Antique Cuirass"
+        },
+        {
+            "soal": "Item untuk menambah regenerasi HP saat tidak bertarung adalah...",
+            "jawaban": "Oracle"
+        },
+        {
+            "soal": "Item untuk meningkatkan damage saat musuh sekarat adalah...",
+            "jawaban": "Malefic Roar"
+        },
+        {
+            "soal": "Item untuk mengurangi durasi skill lawan (cooldown) adalah...",
+            "jawaban": "Fleeting Time"
+        },
+        {
+            "soal": "Item untuk memberikan efek burn pada musuh (Mage) adalah...",
+            "jawaban": "Glowing Wand"
+        },
+        {
+            "soal": "Item untuk meningkatkan serangan setelah menggunakan skill adalah...",
+            "jawaban": "Blade of the Heptaseas"
+        },
+        {
+            "soal": "Item untuk menambah durabilitas hero dengan memberikan shield adalah...",
+            "jawaban": "Immortality"
+        },
+        {
+            "soal": "Item untuk menghidupkan kembali hero setelah mati adalah...",
+            "jawaban": "Immortality"
+        },
+        {
+            "soal": "Item untuk meningkatkan lifesteal secara signifikan adalah...",
+            "jawaban": "Haas's Claws"
+        },
+        {
+            "soal": "Item untuk memberikan tambahan damage pada creep/hutan adalah...",
+            "jawaban": "Jungle Item (Retribution)"
+        },
+        {
+            "soal": "Item untuk menambah serangan berdasarkan HP hero adalah...",
+            "jawaban": "Sky Piercer"
+        },
+        {
+            "soal": "Item untuk mempercepat serangan hero marksman adalah...",
+            "jawaban": "Windtalker"
+        },
+        {
+            "soal": "Item untuk menahan damage sihir dengan shield adalah...",
+            "jawaban": "Athena's Shield"
+        },
+        {
+            "soal": "Item yang digunakan untuk men-counter hero assassin lincah (Defense) adalah...",
+            "jawaban": "Antique Cuirass"
+        },
+        {
+            "soal": "Item untuk menambah efek slow pada basic attack (Mage) adalah...",
+            "jawaban": "Ice Queen Wand"
+        },
+        {
+            "soal": "Item untuk meningkatkan damage sihir saat musuh memiliki HP rendah adalah...",
+            "jawaban": "Holy Crystal"
+        },
+        {
+            "soal": "Item untuk mendapatkan HP yang besar bagi tank adalah...",
+            "jawaban": "Antique Cuirass"
+        }
+    ],
+    "hero_dan_role": [
+        {
+            "soal": "Fredrinn sering difungsikan sebagai...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Arlott sering dimainkan di lane...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Fanny wajib menempati posisi...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Mathilda sering difungsikan sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Terizla sangat kuat menjaga...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Claude menempati posisi...",
+            "jawaban": "Gold Lane"
+        },
+        {
+            "soal": "Nolan melakukan farming di posisi...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Edith ditempatkan di lane...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Floryn berfungsi sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Harith menempati posisi...",
+            "jawaban": "Gold Lane"
+        },
+        {
+            "soal": "Hylos digunakan sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Xavier di posisi...",
+            "jawaban": "Mid Lane"
+        },
+        {
+            "soal": "Julian dimainkan sebagai...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Gusion dimainkan sebagai...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Moskov ditempatkan di posisi...",
+            "jawaban": "Gold Lane"
+        },
+        {
+            "soal": "Pharsa di posisi...",
+            "jawaban": "Mid Lane"
+        },
+        {
+            "soal": "Tigreal di posisi...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Uranus di posisi...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Ling wajib di posisi...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Beatrix menempati posisi...",
+            "jawaban": "Gold Lane"
+        },
+        {
+            "soal": "Angela berfungsi sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Thamuz menjaga...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Hayabusa wajib di posisi...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Valir sering digunakan sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Chang'e di posisi...",
+            "jawaban": "Mid Lane"
+        },
+        {
+            "soal": "Valentina sering difungsikan sebagai...",
+            "jawaban": "Mid Lane"
+        },
+        {
+            "soal": "Atlas berfungsi sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Esmeralda menjaga...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Hanzo wajib di posisi...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Miya ditempatkan di posisi...",
+            "jawaban": "Gold Lane"
+        },
+        {
+            "soal": "Diggie berfungsi sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Yu Zhong menjaga...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Karina wajib di posisi...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Nana sering digunakan di...",
+            "jawaban": "Mid Lane"
+        },
+        {
+            "soal": "Lolita berfungsi sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Lapu-Lapu menjaga...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Martis wajib di posisi...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Kadita di posisi...",
+            "jawaban": "Mid Lane"
+        },
+        {
+            "soal": "Khufra berfungsi sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Benedetta menjaga...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Aamon wajib di posisi...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Lylia di posisi...",
+            "jawaban": "Mid Lane"
+        },
+        {
+            "soal": "Kaja berfungsi sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Paquito menjaga...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Alucard wajib di posisi...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Vexana di posisi...",
+            "jawaban": "Mid Lane"
+        },
+        {
+            "soal": "Grock berfungsi sebagai...",
+            "jawaban": "Roamer"
+        },
+        {
+            "soal": "Dyrroth menjaga...",
+            "jawaban": "Exp Lane"
+        },
+        {
+            "soal": "Lancelot wajib di posisi...",
+            "jawaban": "Jungler"
+        },
+        {
+            "soal": "Zask di posisi...",
+            "jawaban": "Mid Lane"
+        }
+    ],
+    "counter_hero": [
+        {
+            "soal": "Hero Tank dengan skill 2 berbentuk bola yang sangat efektif men-counter Assassin lincah adalah...",
+            "jawaban": "Khufra"
+        },
+        {
+            "soal": "Hero Support yang Ultimate-nya dapat menghapus semua efek Crowd Control area musuh adalah...",
+            "jawaban": "Diggie"
+        },
+        {
+            "soal": "Hero Tank / Roamer yang sangat cocok untuk men-counter pasif Shield tebal dan HP Regen lawan adalah...",
+            "jawaban": "Baxia"
+        },
+        {
+            "soal": "Hero Marksman dengan true damage yang diciptakan khusus untuk menghancurkan Tank berdarah tebal adalah...",
+            "jawaban": "Karrie"
+        },
+        {
+            "soal": "Hero Fighter penembus armor yang skill 2-nya bisa menghancurkan 50% Physical Defense musuh adalah...",
+            "jawaban": "Dyrroth"
+        },
+        {
+            "soal": "Hero yang dapat menghentikan dash musuh (seperti Gusion, Fanny) dengan skill 2-nya adalah...",
+            "jawaban": "Phoveus"
+        },
+        {
+            "soal": "Hero yang sangat efektif men-counter hero dengan skill dash banyak karena skill 2-nya membuat musuh tidak bisa dash adalah...",
+            "jawaban": "Minsitthar"
+        },
+        {
+            "soal": "Hero yang dapat menembus skill lawan dengan ultimate-nya (immune) adalah...",
+            "jawaban": "Lancelot"
+        },
+        {
+            "soal": "Hero Tank yang memiliki skill untuk membalikkan posisi musuh ke arah turret adalah...",
+            "jawaban": "Tigreal"
+        },
+        {
+            "soal": "Hero Assassin yang sangat efektif untuk men-counter Mage dengan mobilitas rendah adalah...",
+            "jawaban": "Saber"
+        },
+        {
+            "soal": "Hero Marksman yang memiliki efek anti-CC dari skill 2-nya untuk men-counter hero CC adalah...",
+            "jawaban": "Wanwan"
+        },
+        {
+            "soal": "Hero Fighter yang memiliki efek suppress untuk men-counter hero assassin lincah adalah...",
+            "jawaban": "Kaja"
+        },
+        {
+            "soal": "Hero Tank yang dapat membuat area 'Black Hole' untuk menarik musuh adalah...",
+            "jawaban": "Atlas"
+        },
+        {
+            "soal": "Hero yang sangat efektif men-counter hero healer dengan skill anti-heal adalah...",
+            "jawaban": "Baxia"
+        },
+        {
+            "soal": "Hero Mage yang bisa mengubah musuh menjadi hewan untuk men-counter hero lincah adalah...",
+            "jawaban": "Nana"
+        },
+        {
+            "soal": "Hero yang dapat membatalkan ultimate musuh dengan skill taunt-nya adalah...",
+            "jawaban": "Gatotkaca"
+        },
+        {
+            "soal": "Hero yang dapat memberikan damage area yang besar untuk men-counter komposisi tim musuh yang berkumpul adalah...",
+            "jawaban": "Yve"
+        },
+        {
+            "soal": "Hero yang memiliki durabilitas tinggi dan sangat kuat untuk menahan serangan marksman lawan adalah...",
+            "jawaban": "Barats"
+        },
+        {
+            "soal": "Hero yang dapat memberikan stun area yang luas untuk men-counter hero assassin musuh adalah...",
+            "jawaban": "Ruby"
+        },
+        {
+            "soal": "Hero yang memiliki skill untuk menarik musuh ke arahnya dan sangat efektif men-counter hero backline adalah...",
+            "jawaban": "Franco"
+        },
+        {
+            "soal": "Hero Support yang dapat memberikan perlindungan shield tebal untuk menahan burst damage adalah...",
+            "jawaban": "Angela"
+        },
+        {
+            "soal": "Hero Tank yang dapat menyerap damage dari teman setimnya untuk men-counter assassin adalah...",
+            "jawaban": "Akai"
+        },
+        {
+            "soal": "Hero yang memiliki mobilitas tinggi untuk men-counter hero dengan serangan lambat adalah...",
+            "jawaban": "Joy"
+        },
+        {
+            "soal": "Hero yang dapat menembus pertahanan lawan dengan burst damage yang sangat besar adalah...",
+            "jawaban": "Eudora"
+        },
+        {
+            "soal": "Hero yang sangat efektif untuk men-counter musuh yang berada di dalam semak-semak adalah...",
+            "jawaban": "Selena"
+        },
+        {
+            "soal": "Hero yang memiliki kemampuan untuk membelah diri dan sangat sulit ditangkap oleh tank lawan adalah...",
+            "jawaban": "Hayabusa"
+        },
+        {
+            "soal": "Hero yang dapat memberikan efek slow yang sangat mengganggu untuk men-counter hero lincah adalah...",
+            "jawaban": "Valir"
+        },
+        {
+            "soal": "Hero yang dapat memanggil ultimate untuk men-counter hero dengan HP rendah adalah...",
+            "jawaban": "Martis"
+        },
+        {
+            "soal": "Hero yang memiliki pertahanan sangat kuat untuk men-counter hero marksman adalah...",
+            "jawaban": "Gatotkaca"
+        },
+        {
+            "soal": "Hero yang dapat membuat tembok untuk mengurung musuh agar tidak bisa kabur adalah...",
+            "jawaban": "Grock"
+        },
+        {
+            "soal": "Hero yang sangat efektif untuk men-counter tank dengan armor tebal adalah...",
+            "jawaban": "Karrie"
+        },
+        {
+            "soal": "Hero yang memiliki kemampuan untuk mencuri buff lawan adalah...",
+            "jawaban": "Hanzo"
+        },
+        {
+            "soal": "Hero yang dapat memberikan damage area dengan ultimate-nya untuk men-counter musuh di area sempit adalah...",
+            "jawaban": "Terizla"
+        },
+        {
+            "soal": "Hero yang sangat efektif men-counter hero assassin dengan skill burst-nya adalah...",
+            "jawaban": "Saber"
+        },
+        {
+            "soal": "Hero yang dapat memberikan efek silence untuk men-counter hero mage adalah...",
+            "jawaban": "Natalia"
+        },
+        {
+            "soal": "Hero yang memiliki skill untuk menghilangkan crowd control musuh pada dirinya sendiri adalah...",
+            "jawaban": "Benedetta"
+        },
+        {
+            "soal": "Hero yang dapat memberikan damage besar dengan serangan area untuk men-counter formasi tim lawan adalah...",
+            "jawaban": "Pharsa"
+        },
+        {
+            "soal": "Hero yang sangat kuat untuk men-counter hero marksman di awal permainan adalah...",
+            "jawaban": "Popol and Kupa"
+        },
+        {
+            "soal": "Hero yang memiliki kemampuan untuk menahan serangan musuh dengan shield-nya adalah...",
+            "jawaban": "Lolita"
+        },
+        {
+            "soal": "Hero yang dapat memberikan efek stun beruntun untuk men-counter musuh lincah adalah...",
+            "jawaban": "Chou"
+        },
+        {
+            "soal": "Hero yang sangat efektif men-counter hero lincah dengan ultimate suppress-nya adalah...",
+            "jawaban": "Franco"
+        },
+        {
+            "soal": "Hero yang dapat memberikan damage besar dengan pasifnya untuk men-counter tank adalah...",
+            "jawaban": "Thamuz"
+        },
+        {
+            "soal": "Hero yang sangat efektif men-counter musuh dengan skill healing-nya adalah...",
+            "jawaban": "Baxia"
+        },
+        {
+            "soal": "Hero yang dapat memberikan crowd control yang sangat menyebalkan bagi assassin musuh adalah...",
+            "jawaban": "Ruby"
+        },
+        {
+            "soal": "Hero yang dapat menahan damage serangan fisik secara keseluruhan adalah...",
+            "jawaban": "Gatotkaca"
+        },
+        {
+            "soal": "Hero yang memiliki kemampuan untuk melakukan burst damage ke musuh dalam hitungan detik adalah...",
+            "jawaban": "Gusion"
+        },
+        {
+            "soal": "Hero yang dapat men-counter musuh dengan area skill yang sangat luas adalah...",
+            "jawaban": "Xavier"
+        },
+        {
+            "soal": "Hero yang sangat efektif untuk men-counter musuh dengan skill ultimate-nya adalah...",
+            "jawaban": "Kaja"
+        },
+        {
+            "soal": "Hero yang memiliki kemampuan untuk menarik perhatian musuh dengan skill taunt-nya adalah...",
+            "jawaban": "Hylos"
+        },
+        {
+            "soal": "Hero yang sangat efektif men-counter hero assassin dengan durabilitasnya adalah...",
+            "jawaban": "Grock"
+        }
+    ],
+    "emblem_dan_talent": [
+        {
+            "soal": "Talent dasar yang memberikan diskon harga item di toko sebesar 5% adalah...",
+            "jawaban": "Bargain Hunter"
+        },
+        {
+            "soal": "Talent emblem Fighter yang memberikan tambahan 8% Spell Vamp adalah...",
+            "jawaban": "Festival of Blood"
+        },
+        {
+            "soal": "Talent yang memberikan efek pemulihan HP dan tambahan Movement Speed setiap kali menyerang musuh adalah...",
+            "jawaban": "Quantum Charge"
+        },
+        {
+            "soal": "Talent yang menyebabkan efek bakar (Burn) memberikan damage tambahan berdasar HP target adalah...",
+            "jawaban": "Lethal Ignition"
+        },
+        {
+            "soal": "Talent Assassin yang memberikan tambahan efek penetrasi tinggi saat musuh sendirian adalah...",
+            "jawaban": "Master Assassin"
+        },
+        {
+            "soal": "Talent emblem untuk hero Roamer yang memberikan Gold tambahan tiap detik adalah...",
+            "jawaban": "Tenacity"
+        },
+        {
+            "soal": "Talent emblem untuk memberikan tambahan damage pada musuh yang terkena CC adalah...",
+            "jawaban": "Weakness Finder"
+        },
+        {
+            "soal": "Talent yang memberikan efek slow kepada lawan setelah memberikan skill damage adalah...",
+            "jawaban": "Rupture"
+        },
+        {
+            "soal": "Talent yang memberikan tambahan damage ke musuh dengan HP rendah (di bawah 50%) adalah...",
+            "jawaban": "Fatal"
+        },
+        {
+            "soal": "Talent untuk menambah durasi stun atau CC yang diberikan kepada musuh adalah...",
+            "jawaban": "Tenacity"
+        },
+        {
+            "soal": "Talent yang memberikan tambahan gold setelah melakukan kill adalah...",
+            "jawaban": "Bargain Hunter"
+        },
+        {
+            "soal": "Talent untuk menambah Physical Attack setiap level hero adalah...",
+            "jawaban": "Rupture"
+        },
+        {
+            "soal": "Talent yang memberikan perlindungan shield saat HP di bawah 30% adalah...",
+            "jawaban": "Tenacity"
+        },
+        {
+            "soal": "Talent untuk meningkatkan Magic Power dan Magic Penetration adalah...",
+            "jawaban": "Mystery Shop"
+        },
+        {
+            "soal": "Talent yang memberikan bonus damage setiap kali memberikan basic attack beruntun adalah...",
+            "jawaban": "Quantum Charge"
+        },
+        {
+            "soal": "Talent untuk menambah lifesteal berdasarkan damage yang diberikan adalah...",
+            "jawaban": "Festival of Blood"
+        },
+        {
+            "soal": "Talent untuk menambah Attack Speed setelah memberikan skill adalah...",
+            "jawaban": "Swift"
+        },
+        {
+            "soal": "Talent untuk menambah Cooldown Reduction secara maksimal adalah...",
+            "jawaban": "Inspire"
+        },
+        {
+            "soal": "Talent yang memberikan efek regenerasi HP setelah membunuh musuh adalah...",
+            "jawaban": "Tenacity"
+        },
+        {
+            "soal": "Talent untuk menambah damage kepada musuh yang memiliki HP lebih tinggi adalah...",
+            "jawaban": "Master Assassin"
+        },
+        {
+            "soal": "Talent yang memberikan bonus physical penetration setiap kali menyerang hero adalah...",
+            "jawaban": "Rupture"
+        },
+        {
+            "soal": "Talent untuk menambah Movement Speed setelah membunuh musuh adalah...",
+            "jawaban": "Quantum Charge"
+        },
+        {
+            "soal": "Talent yang memberikan damage tambahan saat menggunakan spell battle adalah...",
+            "jawaban": "Lethal Ignition"
+        },
+        {
+            "soal": "Talent untuk menambah HP maksimal hero setiap level adalah...",
+            "jawaban": "Tenacity"
+        },
+        {
+            "soal": "Talent yang memberikan bonus magic damage saat menyerang musuh dengan skill adalah...",
+            "jawaban": "Mystery Shop"
+        },
+        {
+            "soal": "Talent untuk meningkatkan damage critical setiap level adalah...",
+            "jawaban": "Fatal"
+        },
+        {
+            "soal": "Talent yang memberikan tambahan efek slow pada musuh dengan basic attack adalah...",
+            "jawaban": "Weakness Finder"
+        },
+        {
+            "soal": "Talent untuk mempercepat proses farming di hutan (jungler) adalah...",
+            "jawaban": "Bargain Hunter"
+        },
+        {
+            "soal": "Talent yang memberikan tambahan damage kepada lord dan turtle adalah...",
+            "jawaban": "Mystery Shop"
+        },
+        {
+            "soal": "Talent untuk mengurangi durasi crowd control yang diterima adalah...",
+            "jawaban": "Tenacity"
+        },
+        {
+            "soal": "Talent yang memberikan bonus physical attack saat HP penuh adalah...",
+            "jawaban": "Master Assassin"
+        },
+        {
+            "soal": "Talent untuk menambah mana regen setiap level hero adalah...",
+            "jawaban": "Inspire"
+        },
+        {
+            "soal": "Talent yang memberikan tambahan shield saat menggunakan skill adalah...",
+            "jawaban": "Tenacity"
+        },
+        {
+            "soal": "Talent untuk menambah damage pada turret adalah...",
+            "jawaban": "Mystery Shop"
+        },
+        {
+            "soal": "Talent yang memberikan bonus physical defense saat musuh di sekitar adalah...",
+            "jawaban": "Tenacity"
+        },
+        {
+            "soal": "Talent untuk memperkuat efek heal pada diri sendiri adalah...",
+            "jawaban": "Festival of Blood"
+        },
+        {
+            "soal": "Talent yang memberikan tambahan damage berdasarkan jarak serangan adalah...",
+            "jawaban": "Master Assassin"
+        },
+        {
+            "soal": "Talent untuk menambah magic lifesteal setiap memberikan damage adalah...",
+            "jawaban": "Festival of Blood"
+        },
+        {
+            "soal": "Talent yang memberikan tambahan gold setelah membantu (assist) adalah...",
+            "jawaban": "Bargain Hunter"
+        },
+        {
+            "soal": "Talent untuk meningkatkan damage saat target berada di bawah 30% HP adalah...",
+            "jawaban": "Fatal"
+        },
+        {
+            "soal": "Talent yang memberikan efek burn tambahan pada hero tank musuh adalah...",
+            "jawaban": "Lethal Ignition"
+        },
+        {
+            "soal": "Talent untuk menambah serangan saat hero terkena debuff adalah...",
+            "jawaban": "Tenacity"
+        },
+        {
+            "soal": "Talent yang memberikan bonus damage pada serangan dasar pertama adalah...",
+            "jawaban": "Quantum Charge"
+        },
+        {
+            "soal": "Talent untuk menambah jumlah mana saat membunuh musuh adalah...",
+            "jawaban": "Inspire"
+        },
+        {
+            "soal": "Talent yang memberikan peningkatan physical attack berdasarkan item yang dimiliki adalah...",
+            "jawaban": "Rupture"
+        },
+        {
+            "soal": "Talent untuk menambah damage kepada musuh dengan role tertentu adalah...",
+            "jawaban": "Master Assassin"
+        },
+        {
+            "soal": "Talent yang memberikan efek healing area setelah membunuh hero lawan adalah...",
+            "jawaban": "Festival of Blood"
+        },
+        {
+            "soal": "Talent untuk menambah movement speed saat berjalan di sungai adalah...",
+            "jawaban": "Quantum Charge"
+        },
+        {
+            "soal": "Talent yang meningkatkan damage pada musuh yang sedang ter-stun adalah...",
+            "jawaban": "Weakness Finder"
+        },
+        {
+            "soal": "Talent untuk memberikan tambahan damage true damage pada serangan basic attack adalah...",
+            "jawaban": "Lethal Ignition"
+        }
+    ],
+    "mekanik_dasar": [
+        {
+            "soal": "Membunuh Lord akan memberikan tim keuntungan tambahan berupa...",
+            "jawaban": "Lord ikut menyerang & Minion diperkuat"
+        },
+        {
+            "soal": "Turtle pertama di Land of Dawn akan muncul (spawn) pada menit ke...",
+            "jawaban": "Menit 2:00"
+        },
+        {
+            "soal": "Buff Biru sangat penting bagi Assassin / Mage karena memberikan efek...",
+            "jawaban": "Pengurangan Cooldown & Hemat Mana/Energi"
+        },
+        {
+            "soal": "Buff Merah memberikan keuntungan berupa...",
+            "jawaban": "Tambahan True Damage & Slow"
+        },
+        {
+            "soal": "Kapan waktu munculnya Lord tahap 3 (Evolved Lord)?",
+            "jawaban": "Menit 12:00"
+        },
+        {
+            "soal": "Fungsi utama dari 'Retribution' adalah...",
+            "jawaban": "Memberikan damage besar ke creep/lord/turtle"
+        },
+        {
+            "soal": "Apa yang terjadi jika memenangkan War di menit ke-15?",
+            "jawaban": "Peluang besar untuk push/menang"
+        },
+        {
+            "soal": "Apa tujuan utama menghancurkan Turret musuh?",
+            "jawaban": "Membuka jalan menuju Base lawan"
+        },
+        {
+            "soal": "Apa sebutan bagi pemain yang hanya fokus farming dan jarang membantu tim di awal?",
+            "jawaban": "AFK Farming"
+        },
+        {
+            "soal": "Apa fungsi utama dari item sepatu 'Roam'?",
+            "jawaban": "Meningkatkan gold/exp secara otomatis untuk roamer"
+        },
+        {
+            "soal": "Berapa menit Turtle akan respawn setelah dibunuh?",
+            "jawaban": "2 menit"
+        },
+        {
+            "soal": "Kapan Lord pertama biasanya muncul di peta?",
+            "jawaban": "Menit 8:00"
+        },
+        {
+            "soal": "Apa istilah untuk melakukan penyerangan secara bersamaan pada satu lane?",
+            "jawaban": "Ganking"
+        },
+        {
+            "soal": "Apa fungsi dari 'Vision' di map?",
+            "jawaban": "Melihat pergerakan musuh di area tertentu"
+        },
+        {
+            "soal": "Apa sebutan saat hero musuh mati secara beruntun dan kehilangan gold?",
+            "jawaban": "Feeding"
+        },
+        {
+            "soal": "Apa manfaat membunuh 'Lithowanderer' di sungai?",
+            "jawaban": "Memberikan vision dan pemulihan mana"
+        },
+        {
+            "soal": "Kapan waktu yang tepat untuk melakukan rotasi dari lane ke tengah?",
+            "jawaban": "Setelah membersihkan minion"
+        },
+        {
+            "soal": "Apa arti dari 'Split Push'?",
+            "jawaban": "Mendorong lane sendirian untuk memecah fokus musuh"
+        },
+        {
+            "soal": "Apa kegunaan dari 'Freeze Lane'?",
+            "jawaban": "Menahan minion agar musuh tidak dapat gold/exp"
+        },
+        {
+            "soal": "Apa fungsi dari 'Zoning' dalam team fight?",
+            "jawaban": "Menahan musuh agar tidak mendekati objective"
+        },
+        {
+            "soal": "Apa yang harus dilakukan saat musuh mengambil Lord?",
+            "jawaban": "Melakukan clear minion atau mencuri Lord"
+        },
+        {
+            "soal": "Apa sebutan bagi hero yang tidak memiliki item sepatu?",
+            "jawaban": "Tidak ada istilah khusus"
+        },
+        {
+            "soal": "Kapan fase late game dimulai dalam pertandingan?",
+            "jawaban": "Menit 12:00 ke atas"
+        },
+        {
+            "soal": "Apa kegunaan dari 'Recall'?",
+            "jawaban": "Kembali ke base untuk mengisi HP/Mana"
+        },
+        {
+            "soal": "Apa efek dari 'Shield' pada turret?",
+            "jawaban": "Mengurangi damage yang diterima turret"
+        },
+        {
+            "soal": "Apa yang terjadi jika inhibitor turret hancur?",
+            "jawaban": "Super minion akan muncul"
+        },
+        {
+            "soal": "Apa fungsi dari 'Base'?",
+            "jawaban": "Tempat spawn dan area pertahanan utama"
+        },
+        {
+            "soal": "Apa sebutan untuk serangan yang dilakukan dari belakang?",
+            "jawaban": "Flanking"
+        },
+        {
+            "soal": "Apa fungsi dari 'Minion Wave'?",
+            "jawaban": "Membuka jalan untuk push turret"
+        },
+        {
+            "soal": "Apa itu 'Last Hit' pada minion?",
+            "jawaban": "Membunuh minion untuk mendapatkan gold tambahan"
+        },
+        {
+            "soal": "Apa kegunaan dari 'Savage'?",
+            "jawaban": "Membunuh 5 hero musuh secara beruntun"
+        },
+        {
+            "soal": "Apa sebutan untuk 3 kill berturut-turut?",
+            "jawaban": "Triple Kill"
+        },
+        {
+            "soal": "Berapa jumlah maksimal pemain dalam satu tim?",
+            "jawaban": "5 pemain"
+        },
+        {
+            "soal": "Apa fungsi 'Flicker' dalam battle spell?",
+            "jawaban": "Teleportasi jarak pendek untuk kabur/mengejar"
+        },
+        {
+            "soal": "Apa itu 'Crowd Control'?",
+            "jawaban": "Efek yang melumpuhkan gerakan musuh"
+        },
+        {
+            "soal": "Apa sebutan bagi hero yang mengandalkan serangan fisik?",
+            "jawaban": "Physical Hero"
+        },
+        {
+            "soal": "Apa fungsi 'Magic Damage'?",
+            "jawaban": "Serangan yang bersumber dari magic power"
+        },
+        {
+            "soal": "Apa itu 'True Damage'?",
+            "jawaban": "Damage yang mengabaikan armor dan shield"
+        },
+        {
+            "soal": "Apa sebutan untuk serangan kritis?",
+            "jawaban": "Critical Damage"
+        },
+        {
+            "soal": "Apa kegunaan dari 'Attack Speed'?",
+            "jawaban": "Menambah kecepatan serangan basic attack"
+        },
+        {
+            "soal": "Apa fungsi 'Cooldown Reduction'?",
+            "jawaban": "Mengurangi waktu tunggu skill"
+        },
+        {
+            "soal": "Apa itu 'Lifesteal'?",
+            "jawaban": "Memulihkan HP melalui serangan fisik"
+        },
+        {
+            "soal": "Apa itu 'Spell Vamp'?",
+            "jawaban": "Memulihkan HP melalui serangan skill"
+        },
+        {
+            "soal": "Apa fungsi 'Physical Penetration'?",
+            "jawaban": "Menembus armor lawan"
+        },
+        {
+            "soal": "Apa fungsi 'Magic Penetration'?",
+            "jawaban": "Menembus magic defense lawan"
+        },
+        {
+            "soal": "Apa itu 'Immune'?",
+            "jawaban": "Kebal terhadap damage atau CC"
+        },
+        {
+            "soal": "Apa arti dari 'Poke'?",
+            "jawaban": "Mencicil HP musuh dengan serangan jarak jauh"
+        },
+        {
+            "soal": "Apa sebutan untuk hero yang menjadi target utama?",
+            "jawaban": "Carry"
+        },
+        {
+            "soal": "Apa fungsi dari 'Map Awareness'?",
+            "jawaban": "Memperhatikan peta untuk memprediksi posisi musuh"
+        },
+        {
+            "soal": "Apa tujuan akhir dari permainan Mobile Legends?",
+            "jawaban": "Menghancurkan base lawan"
+        }
+    ],
+    "build_hero": [
+        {
+            "soal": "Item inti untuk meningkatkan Attack Speed dan Critical Damage bagi Marksman adalah...",
+            "jawaban": "Windtalker"
+        },
+        {
+            "soal": "Item core untuk hero Mage yang memberikan Magic Penetrasi dan Magic Power tinggi adalah...",
+            "jawaban": "Genius Wand"
+        },
+        {
+            "soal": "Item wajib bagi Fighter untuk memberikan tambahan attack dan durabilitas (HP) adalah...",
+            "jawaban": "Bloodlust Axe"
+        },
+        {
+            "soal": "Item yang memberikan efek 'kebal' sementara saat HP sekarat bagi hero core adalah...",
+            "jawaban": "Rose Gold Meteor"
+        },
+        {
+            "soal": "Item untuk meningkatkan Physical Attack dan lifesteal adalah...",
+            "jawaban": "Haas's Claws"
+        },
+        {
+            "soal": "Item sepatu yang memberikan pengurangan durasi Crowd Control musuh adalah...",
+            "jawaban": "Tough Boots"
+        },
+        {
+            "soal": "Item sepatu yang memberikan Physical Defense tambahan adalah...",
+            "jawaban": "Warrior Boots"
+        },
+        {
+            "soal": "Item untuk meningkatkan Magic Damage secara drastis bagi Mage di late game adalah...",
+            "jawaban": "Blood Wings"
+        },
+        {
+            "soal": "Item untuk menambah Attack Speed dan movement speed bagi Marksman adalah...",
+            "jawaban": "Windtalker"
+        },
+        {
+            "soal": "Item untuk memberikan tambahan damage berdasarkan HP lawan bagi Marksman adalah...",
+            "jawaban": "Demon Hunter Sword"
+        },
+        {
+            "soal": "Item untuk meningkatkan critical chance secara masif adalah...",
+            "jawaban": "Berserker's Fury"
+        },
+        {
+            "soal": "Item yang memberikan efek burn pada musuh setelah menggunakan skill (Mage) adalah...",
+            "jawaban": "Glowing Wand"
+        },
+        {
+            "soal": "Item untuk memberikan efek slow pada musuh dengan skill adalah...",
+            "jawaban": "Ice Queen Wand"
+        },
+        {
+            "soal": "Item yang memberikan Physical Defense dan HP yang sangat besar adalah...",
+            "jawaban": "Antique Cuirass"
+        },
+        {
+            "soal": "Item untuk meningkatkan durasi stun dari skill adalah...",
+            "jawaban": "Ice Queen Wand"
+        },
+        {
+            "soal": "Item untuk menambah regenerasi HP saat tidak bertarung bagi Tank adalah...",
+            "jawaban": "Guardian Helmet"
+        },
+        {
+            "soal": "Item untuk menambah damage sihir setiap kali memberikan skill adalah...",
+            "jawaban": "Lightning Truncheon"
+        },
+        {
+            "soal": "Item untuk menembus magic defense lawan secara persentase adalah...",
+            "jawaban": "Divine Glaive"
+        },
+        {
+            "soal": "Item untuk menembus physical defense lawan secara persentase adalah...",
+            "jawaban": "Malefic Roar"
+        },
+        {
+            "soal": "Item untuk meningkatkan cooldown reduction dan mana adalah...",
+            "jawaban": "Enchanted Talisman"
+        },
+        {
+            "soal": "Item untuk memberikan efek lifesteal dan cooldown reduction adalah...",
+            "jawaban": "Bloodlust Axe"
+        },
+        {
+            "soal": "Item untuk menambah HP yang sangat besar dan regenerasi bagi tank adalah...",
+            "jawaban": "Guardian Helmet"
+        },
+        {
+            "soal": "Item untuk memberikan damage area tambahan bagi Marksman adalah...",
+            "jawaban": "Windtalker"
+        },
+        {
+            "soal": "Item untuk menambah physical attack secara besar-besaran (100+) adalah...",
+            "jawaban": "Blade of Despair"
+        },
+        {
+            "soal": "Item untuk memberikan tambahan serangan berdasarkan sisa HP lawan adalah...",
+            "jawaban": "Demon Hunter Sword"
+        },
+        {
+            "soal": "Item untuk mendapatkan shield setiap kali menggunakan skill (Mage) adalah...",
+            "jawaban": "Concentrated Energy"
+        },
+        {
+            "soal": "Item untuk meningkatkan mana dan HP secara signifikan bagi support/tank adalah...",
+            "jawaban": "Flask of the Oasis"
+        },
+        {
+            "soal": "Item untuk menambah physical defense dan anti-crit adalah...",
+            "jawaban": "Antique Cuirass"
+        },
+        {
+            "soal": "Item untuk meningkatkan kecepatan serangan dan critical adalah...",
+            "jawaban": "Windtalker"
+        },
+        {
+            "soal": "Item untuk mendapatkan tambahan physical attack saat musuh sekarat adalah...",
+            "jawaban": "Malefic Roar"
+        },
+        {
+            "soal": "Item untuk meningkatkan damage sihir saat HP penuh adalah...",
+            "jawaban": "Holy Crystal"
+        },
+        {
+            "soal": "Item untuk menambah movement speed dan physical attack adalah...",
+            "jawaban": "Blade of the Heptaseas"
+        },
+        {
+            "soal": "Item untuk mengurangi durasi cooldown skill adalah...",
+            "jawaban": "Fleeting Time"
+        },
+        {
+            "soal": "Item untuk mendapatkan tambahan damage pada basic attack (Mage) adalah...",
+            "jawaban": "Calamity Reaper"
+        },
+        {
+            "soal": "Item untuk menambah pertahanan sihir secara bertahap adalah...",
+            "jawaban": "Radiant Armor"
+        },
+        {
+            "soal": "Item untuk menambah pertahanan sihir secara instan adalah...",
+            "jawaban": "Athena's Shield"
+        },
+        {
+            "soal": "Item untuk menambah physical defense secara instan adalah...",
+            "jawaban": "Warrior Boots"
+        },
+        {
+            "soal": "Item untuk menambah critical damage secara signifikan adalah...",
+            "jawaban": "Berserker's Fury"
+        },
+        {
+            "soal": "Item untuk memberikan efek slow pada musuh dengan basic attack adalah...",
+            "jawaban": "Corrosion Scythe"
+        },
+        {
+            "soal": "Item untuk mendapatkan shield saat HP sekarat (Physical) adalah...",
+            "jawaban": "Rose Gold Meteor"
+        },
+        {
+            "soal": "Item untuk memberikan damage tambahan berupa true damage adalah...",
+            "jawaban": "Endless Battle"
+        },
+        {
+            "soal": "Item untuk meningkatkan lifesteal fisik secara terus menerus adalah...",
+            "jawaban": "Haas's Claws"
+        },
+        {
+            "soal": "Item untuk memberikan tambahan damage pada creep/hutan adalah...",
+            "jawaban": "Jungle Item (Retribution)"
+        },
+        {
+            "soal": "Item untuk meningkatkan penetration pada physical attack adalah...",
+            "jawaban": "Hunter Strike"
+        },
+        {
+            "soal": "Item untuk mempercepat regenerasi mana bagi hero mage adalah...",
+            "jawaban": "Enchanted Talisman"
+        },
+        {
+            "soal": "Item untuk memberikan tambahan HP dan Physical Defense adalah...",
+            "jawaban": "Antique Cuirass"
+        },
+        {
+            "soal": "Item untuk menambah physical attack dan movement speed (assassin) adalah...",
+            "jawaban": "Blade of the Heptaseas"
+        },
+        {
+            "soal": "Item untuk memberikan damage sihir berdasarkan sisa HP lawan adalah...",
+            "jawaban": "Glowing Wand"
+        },
+        {
+            "soal": "Item untuk meningkatkan HP secara maksimal bagi tanker adalah...",
+            "jawaban": "Guardian Helmet"
+        },
+        {
+            "soal": "Item untuk memberikan tambahan serangan setelah menggunakan skill (Fighter) adalah...",
+            "jawaban": "Hunter Strike"
+        }
+    ]
+}
