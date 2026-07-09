@@ -118,6 +118,12 @@
         <div id="setup" class="card p-4 shadow">
             <h3 class="text-center">🎈 Ayo Mulai Bermain!</h3>
             <form id="setupForm">
+                <div class="mt-3">
+                    <label>👤 Nama Pemain</label>
+                    <input id="playerName" type="text" class="form-control form-control-lg"
+                        placeholder="Masukkan namamu..." required>
+                </div>
+
                 <div class="row mt-3">
                     <div class="col">
                         <label>Angka 1 (min)</label>
@@ -171,6 +177,7 @@
                     </select>
                 </div>
                 <button type="submit" class="btn btn-warning btn-lg w-100 mt-4">🚀 MULAI MAIN</button>
+                <!-- <a href="riwayat.html" class="btn btn-outline-dark w-100 mt-2">📊 Lihat Halaman Riwayat</a> -->
             </form>
         </div>
 
@@ -197,9 +204,38 @@
 
         <div id="result" class="card p-4 shadow mt-4 text-center d-none">
             <h2>🏆 HASIL AKHIR 🏆</h2>
-            <p class="fs-1 text-success">😊 Benar: <span id="correct">0</span></p>
-            <p class="fs-1 text-danger">😢 Salah: <span id="wrong">0</span></p>
-            <button class="btn btn-primary btn-lg" onclick="location.reload()">🔄 Main Lagi</button>
+            <h3 class="text-primary mb-3">Selamat, <span id="displayName"></span>!</h3>
+            <p class="fs-1 text-success mb-1">😊 Benar: <span id="correct">0</span></p>
+            <p class="fs-1 text-danger mb-1">😢 Salah: <span id="wrong">0</span></p>
+            <p class="fs-3 text-info mb-1">⏱️ Rata-rata: <span id="avgTimeDisplay">0</span></p>
+            <p class="fs-3 text-warning">⏳ Total Waktu Main: <span id="totalTimeDisplay">0</span></p>
+
+            <button class="btn btn-primary btn-lg mt-2" onclick="location.reload()">🔄 Main Lagi</button>
+            <!-- <a href="riwayat.html" class="btn btn-secondary btn-lg mt-2">📊 Kelola Riwayat</a> -->
+
+            <div class="mt-5 text-start">
+                <h4 class="mb-3">📊 Riwayat Kuis</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped text-center">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Nama</th>
+                                <th>Tanggal</th>
+                                <th>Operasi</th>
+                                <th>Benar</th>
+                                <th>Salah</th>
+                                <th>Rata-rata Waktu</th>
+                                <th>Total Waktu Main</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dbTableBody">
+                            <tr>
+                                <td colspan="7">Memuat data dari server...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -209,18 +245,21 @@
     <audio id="sndTime" src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-tone-996.wav"></audio>
 
     <script>
-        let min1, max1, min2, max2, timeLimit, ops;
-        let isShowText, isShowRepeat; // Variabel pengaturan baru
+        let playerName = "", min1, max1, min2, max2, timeLimit, ops;
+        let isShowText, isShowRepeat;
         let correct = 0, wrong = 0, timer, current;
+        let totalTimeSpent = 0, totalQuestions = 0, questionStartTime = 0;
+        let quizSessionStartTime = 0; // Tambahan untuk total waktu pengerjaan
 
         const q = document.getElementById("question");
         const ans = document.getElementById("answers");
         const bar = document.getElementById("timeBar");
-        const btnRepeat = document.getElementById("btnRepeat"); // Referensi tombol ulangi
-
+        const btnRepeat = document.getElementById("btnRepeat");
         const sndOk = document.getElementById("sndOk");
         const sndFail = document.getElementById("sndFail");
         const sndTime = document.getElementById("sndTime");
+
+        const API_URL = 'api.php';
 
         function speak(text) {
             window.speechSynthesis.cancel();
@@ -270,15 +309,14 @@
         function startQuiz() {
             clearInterval(timer);
             current = gen();
+            questionStartTime = Date.now();
 
-            // Logika cek combo box teks
             if (isShowText) {
                 q.textContent = current.question;
             } else {
                 q.textContent = "🔊 Dengarkan...";
             }
 
-            // Logika cek combo box tombol ulangi
             if (isShowRepeat) {
                 btnRepeat.classList.remove("d-none");
             } else {
@@ -303,6 +341,9 @@
                 bar.style.width = (t / timeLimit * 100) + "%";
                 if (t <= 0) {
                     clearInterval(timer);
+                    let timeSpent = (Date.now() - questionStartTime) / 1000;
+                    totalTimeSpent += timeSpent;
+                    totalQuestions++;
                     wrong++;
                     document.getElementById("liveWrong").textContent = wrong;
                     sndTime.play();
@@ -318,7 +359,11 @@
 
         function checkAnswer(val) {
             clearInterval(timer);
+            let timeSpent = (Date.now() - questionStartTime) / 1000;
+            totalTimeSpent += timeSpent;
+            totalQuestions++;
             document.querySelectorAll(".answer-btn").forEach(b => b.disabled = true);
+
             if (val === current.answer) {
                 correct++;
                 document.getElementById("liveCorrect").textContent = correct;
@@ -344,44 +389,120 @@
             }
         }
 
-        // Fungsi klik tombol ulangi suara
         btnRepeat.onclick = () => {
-            if (current && current.speechText) {
-                speak(current.speechText);
-            }
+            if (current && current.speechText) speak(current.speechText);
         };
+
+        function renderDatabase() {
+            fetch(`${API_URL}?action=get`)
+                .then(res => res.json())
+                .then(history => {
+                    const tbody = document.getElementById('dbTableBody');
+                    tbody.innerHTML = "";
+
+                    if (!history || history.length === 0) {
+                        tbody.innerHTML = `<tr><td colspan="7" class="text-muted">Belum ada riwayat kuis di server</td></tr>`;
+                        return;
+                    }
+
+                    history.forEach(row => {
+                        let tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td class="fw-bold">${row.nama}</td>
+                            <td>${row.tanggal}</td>
+                            <td>${row.operasi}</td>
+                            <td class="text-success fw-bold">${row.benar}</td>
+                            <td class="text-danger fw-bold">${row.salah}</td>
+                            <td>${row.rataWaktu} detik</td>
+                            <td>${row.totalWaktu} detik</td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                })
+                .catch(err => {
+                    console.error("Gagal mengambil data:", err);
+                    document.getElementById('dbTableBody').innerHTML = `<tr><td colspan="7" class="text-danger">Gagal terhubung ke server database.</td></tr>`;
+                });
+        }
 
         document.getElementById("setupForm").addEventListener("submit", function (e) {
             e.preventDefault();
+            playerName = document.getElementById("playerName").value;
             min1 = Number(document.getElementById("min1").value);
             max1 = Number(document.getElementById("max1").value);
             min2 = Number(document.getElementById("min2").value);
             max2 = Number(document.getElementById("max2").value);
             timeLimit = Number(document.getElementById("timeLimit").value);
-
-            // Simpan nilai pengaturan combo box
             isShowText = document.getElementById("showTextOpt").value === "yes";
             isShowRepeat = document.getElementById("showRepeatOpt").value === "yes";
-
             ops = [...document.getElementById("operation").selectedOptions].map(o => o.value);
+
             if (ops.length === 0) {
                 alert("Pilih minimal satu operasi!");
                 return;
             }
+
+            correct = 0; wrong = 0; totalTimeSpent = 0; totalQuestions = 0;
+            document.getElementById("liveCorrect").textContent = correct;
+            document.getElementById("liveWrong").textContent = wrong;
             document.getElementById("setup").classList.add("d-none");
             document.getElementById("quiz").classList.remove("d-none");
+
+            // Catat waktu mulai main sesi keseluruhan
+            quizSessionStartTime = Date.now();
             startQuiz();
         });
 
         document.getElementById("stopQuiz").onclick = () => {
             clearInterval(timer);
             window.speechSynthesis.cancel();
+
+            // Hitung waktu keseluruhan dari mulai sampai selesai
+            let totalWaktuKeseluruhan = ((Date.now() - quizSessionStartTime) / 1000).toFixed(2);
+
             document.getElementById("quiz").classList.add("d-none");
             document.getElementById("result").classList.remove("d-none");
+            document.getElementById("displayName").textContent = playerName;
             document.getElementById("correct").textContent = correct;
             document.getElementById("wrong").textContent = wrong;
-            speak(`Luar biasa! Kamu berhasil menjawab ${correct} soal dengan benar.`);
+            document.getElementById("totalTimeDisplay").textContent = `${totalWaktuKeseluruhan} detik`;
+
+            let avgTime = totalQuestions > 0 ? (totalTimeSpent / totalQuestions).toFixed(2) : 0;
+            document.getElementById("avgTimeDisplay").textContent = `${avgTime} detik/soal`;
+
+            if (totalQuestions > 0) {
+                let today = new Date().toLocaleString("id-ID");
+                let opNamesMap = { "+": "Tambah", "-": "Kurang", "*": "Kali", "/": "Bagi" };
+                let selectedOpsNames = ops.map(o => opNamesMap[o]).join(', ');
+
+                let dataToSave = {
+                    nama: playerName,
+                    tanggal: today,
+                    operasi: selectedOpsNames,
+                    benar: correct,
+                    salah: wrong,
+                    rataWaktu: avgTime,
+                    totalWaktu: totalWaktuKeseluruhan
+                };
+
+                fetch(`${API_URL}?action=save`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(dataToSave)
+                })
+                    .then(res => res.json())
+                    .then(response => {
+                        renderDatabase();
+                        speak(`Luar biasa ${playerName}! Kamu berhasil menjawab ${correct} soal dengan benar.`);
+                    })
+                    .catch(err => console.error("Gagal menyimpan ke server", err));
+            } else {
+                renderDatabase();
+                speak("Kamu belum menjawab soal apapun.");
+            }
         };
+
+        renderDatabase();
     </script>
 </body>
 
